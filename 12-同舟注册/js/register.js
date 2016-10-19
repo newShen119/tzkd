@@ -16,7 +16,7 @@ $(function(){
 
 	//常用用户名
 	jQuery.validator.addMethod("enOrNum",function(value, element){
-		var enOrNum = /^[a-zA-z][a-zA-Z0-9]{5,14}$/;
+		var enOrNum = /^[a-zA-Z][a-zA-Z0-9]{5,14}$/;
 		return this.optional(element) || (enOrNum.test(value));
 	},"以英字母开头、包含数字，英文字母，6-15位");
 
