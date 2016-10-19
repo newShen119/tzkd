@@ -1,0 +1,67 @@
+/* @tzjf.css 同舟计费 || 2016-10-16 */
+#banner {
+	width: 100%;
+
+	a {
+		display: block;
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.content {
+	padding: 20px 0;
+	overflow: hidden;
+
+	.tb {
+		margin: 20px 0;
+		text-align: center;
+
+		h2 {
+			padding: 20px;
+			font-size: 24px;
+		}
+		
+		table {
+			width: 100%;
+			overflow: hidden;
+
+			td {
+				width: 33.33%;
+				border: 1px #666 solid;
+			}
+
+			tr {	
+				width: 100%;
+				height: 40px;
+			    font-size: 16px;
+			    color: #404040;
+			    line-height: 40px;
+
+			    &.info {
+
+			    	td {
+			    		padding-left: 20px;
+			    		font-size:14px;
+			    		color:red;
+			    		text-align:left;
+			    		background-color:#dbecfd;
+			    	}
+			    }
+
+			    &.last {
+
+			    	td {
+			    		padding-left: 20px;
+			    		color:red;
+			    		font-size:16px;
+			    		text-align: left;
+			    	}
+			    }
+			}
+		}
+	}
+}

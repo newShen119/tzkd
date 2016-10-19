@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>同舟快递-注册会员</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../common/css/h-t-f.css">
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+	<!-- header开始 -->
+	<div id="header">
+		<div class="w clearfix">
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<ul class="nav">
+				<li>
+					<a href="../01-同舟首页/index.html">同舟首页</a>
+				</li>
+				<li>
+					<a href="../02-我的同舟/01-会员中心.html">我的同舟</a>
+				</li>
+				<li>
+					<a href="../03-同舟返利/ztfl.html">同舟返利</a>
+				</li>
+				<li>
+					<a href="../04-同舟教室/rmwt.html">同舟教室</a>
+				</li>
+				<li>
+					<a href="../05-同舟服务/ztfw.html">同舟服务</a>
+				</li>
+				<li>
+					<a href="../06-同舟计费/tzjf.html">同舟计费</a>
+				</li>
+				<li>
+					<a href="../07-同舟新闻/tzxw.html">同舟新闻</a>
+				</li>
+				<li>
+					<a href="../08-关于同舟/gytz.html">关于同舟</a>
+				</li>
+				<li>
+					<a href="../09-联系我们/index.html">联系我们</a>
+				</li>
+			</ul>
+			<div id="login">
+				<a class="login-link" href="../11-同舟登陆/login.html">登录</a>
+				<a class="regist-link" href="../12-同舟注册/register.html">注册</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 注册表单 -->
+	<div id="regist">
+		
+		<!-- 公共宽度 -->
+		<div class="w clearfix">
+			
+			<!-- 标题 -->
+			<h2>欢迎注册！</h2>
+
+			<!-- 注册表单容器 -->
+			<div class="reg-form fl">
+				
+				<!-- 注册form -->
+				<form action="" id="regist-form">
+
+					<!-- username -->
+					<div class="item">
+						<label class="txt" for="username">用户名</label>
+						<input type="text" name="username" id="username" placeholder="用户名为6-15个英文字符"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- password -->
+					<div class="item">
+						<label class="txt" for="password">密码</label>
+						<input type="password" name="password" id="password" placeholder="密码可为英文、符号、数字，长度6-20位"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- confirm -->
+					<div class="item">
+						<label class="txt" for="confirm">确认密码</label>
+						<input type="password" name="confirm" id="confirm" placeholder="请再次输入密码"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- firstName -->
+					<div class="item">
+						<label class="txt" for="firstName">名（first Name）</label>
+						<input type="text" name="firstName" id="firstName" placeholder="英文或拼音，海外网站下单时填写的FirstName(填入后不可更改)"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- mobile -->
+					<div class="item">
+						<label class="txt" for="mobile">手机号</label>
+						<input type="text" name="mobile" id="mobile" placeholder="填写正确的手机号，忘记密码是可以通过短信找回！"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- Email -->
+					<div class="item">
+						<label class="txt" for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="填写正确的邮箱地址，忘记密码是可以通过邮箱找回！"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- recommend -->
+					<div class="item">
+						<label class="txt" for="recommend">推荐用户名</label>
+						<input type="text" name="recommend" id="recommend" placeholder="通过推荐人用户名注册！（通过推荐人获取此用户，无需填写）" readonly="readonly"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- code -->
+					<div class="item verify">
+						<label class="txt" for="code">验证码</label>
+						<input type="text" name="code" id="code"/>
+						<a id="verify_code" href="javascript:;void(0)">
+							<img src="img/verify_code.png" alt="">
+						</a>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- 《用户注册协议》 -->
+					<div class="agree">
+						<input id="agree" type="checkbox" name="agree"/>
+						<label for="agree">我已阅读并同意</label>
+						<a id="protocol_link" href="javascript:;void(0)">《用户注册协议》</a>
+					</div>
+
+					<!-- 注册按钮 -->
+					<div>
+						<button type="submit" class="btn-register">立即注册</button>
+					</div>
+				</form>
+			</div>
+
+
+
+			<!-- 分割线开始 -->
+			<div class="line"></div>
+
+			<!-- 右侧内容 -->
+			<div class="reg-right fl">
+
+				<!-- 微信 -->
+				<div class="weixin">
+					<img src="img/weixin.png"/>
+					<div class="img-text">
+						<p>扫描微信二维码</p>
+						<p>关注同舟服务号</p>
+					</div>
+				</div>
+
+				<!-- 登陆链接 -->
+				<div class="weixin-btm">
+					<p>已有账号？</p>
+					<a href="../11-同舟登陆/login.html">立即登陆</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 侧边固定 -->
+	<div id="toolbar">
+		<a class="t1" href="javascript:;void(0)">
+			<i class="fa fa-arrow-circle-up"></i>
+			<span>返回顶部</span>
+		</a>
+		<a class="t2" href="javascript:;void(0)">
+			<i class=" fa fa-envelope"></i>
+			<span>客服邮箱</span>
+		</a>
+		<a class="t3" href="javascript:;void(0)" >
+			<i class="fa fa-headphones"></i>
+			<span>自助服务</span>
+		</a>
+	</div>
+
+	<!-- 底部footer开始 -->
+	<div id="footer">
+		<div class="w clearfix">
+			<!-- footer左边 -->
+			<div class="item1 fl">
+				<div class="links">
+					<a href="#">关于同舟</a>
+					<span>|</span>
+					<a href="#">同舟客服</a>
+					<span>|</span>
+					<a href="#">同舟教室</a>
+					<span>|</span>
+					<a href="#">免责声明</a>
+					<span>|</span>
+					<a href="#">联系我们</a>
+				</div>
+				<div class="serve">
+					<p>客服热线：40066977798 </p>
+					<div id="qq"><img src="../common/img/qq.png"/></div>
+				</div>
+				<p>电子邮箱：contact.ship188@gmail.com</p>
+				<p>公司地址：939 Radecki Ct, City of Industry, CA 91748</p>
+				<div class="copyright">
+					<p>© CALIFORNIA HEAD QUARTER 版权所有 2010-2014</p>
+					<a href="#">
+						<img src="../common/img/site.gif"/>
+					</a>
+				</div>
+			</div>
+			<!-- footer右边 -->
+			<div class="item2 fr">
+				<div class="weixin">
+					<img src="../common/img/weixin.png"/>
+					<p>关注同舟微信服务号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mask"></div>
+
+	<!-- 注册协议许可 -->
+	<div class="dialog" style="display: none;">
+		<div class="dialog-tit">
+			<span>注册许可协议</span>
+		</div>
+		<div class="dialog-cnt">
+			<div class="protocol">
+				<div class="protocol-cnt">
+
+					<h2>同舟快递用户协议</h2>
+					<p>TONGZHOU同舟快递（以下简称“TONGZHOU”。）向会员提供国际电子商务物流服务（以下简称“本服务”。），并制定 “TONGZHOU同舟快递会员服务协议”（以下简称“本协议”）如下。本服务协议内容包括协议正文及所有TONGZHOU同舟快递已经发布的或将来可能发布的各类规则。所有规则为协议不可分割的一部分，与协议正文具有同等法律效力。</p>
+					<p>用户在使用TONGZHOU提供的各项服务的同时，承诺接受并遵守各项相关规则的规定。TONGZHOU有权根据需要不时地制定、修改本协议或各类规则，如本协议有任何变更，TONGZHOU将在网站上刊载公告，通知予用户。如用户不同意相关变更，必须停止使用“本服务”。经修订的协议一经在TONGZHOU公布后，立即自动生效。各类规则会在发布后生效，亦成为本协议的一部分。登录或继续使用“本服务”将表示用户接受经修订的协议。除另行明确声明外，任何使“本服务”范围扩大或功能增强的新内容均受本协议约束</p>
+					<p>用户确认本服务协议后，本服务协议即在用户和TONGZHOU之间产生法律效力。请用户务必在注册之前认真阅读全部服务协议内容，如有任何疑问，可向TONGZHOU咨询。无论用户事实上是否在注册之前认真阅读了本服务协议，只要用户点击协议正本下方的“确认”按钮并按照TONGZHOU同舟快递注册程序成功注册为用户，用户的行为仍然表示其同意并签署了本服务协议。</p>
+
+
+					<h4>第一条（会员资格）</h4>
+					<p>
+						1）会员是指在同意本协议的基础上，在网上提交使用本公司运营服务的入会申请，经本公司批准成为会员后，收到会员ID的使用权。<br>
+						2）会员不得将会员资格出借、转让、买卖、抵押等。<br>
+					</p>
+
+
+					<h4>第二条（会员申请）</h4>
+					<p>
+						1）申请入会人员（以下简称“入会申请人”）需由本人网上提交注册申请。注册申请人为未成年人时，需经法定保护人同意后方可申请注册。<br>
+						2）前项的申请经本公司同意后即完成会员登录手续。但是如本公司发现入会申请人属于以下任何一项规定，可以拒绝申请人的入会申请，即使已批准入会者也可取消其会员资格。<br>
+						(a) 入会申请人为未成年人，且未经法定保护人同意；<br>
+						(b) 入会申请人曾经因违反本协议等行为而被取消会员资格；<br>
+						(c) 入会申请人提交的申请中，有虚假、误写或漏写的事项；<br>
+						(d) 入会申请人有未支付本公司债务的记录；<br>
+						(e) 妨害本公司的运营和服务或妨害其他会员使用本公司的服务，或有阻碍以上运营和服务的行为；<br>
+						(f) 本公司认为不符合规定的其他情况。<br>
+					</p>
+
+
+					<h4>第三条（会员ID及密码的管理）</h4>
+					<p>
+						1）会员在进行会员注册后，须负责管理本公司的会员ID、密码。<br>
+						2）会员不得将会员ID及密码出借、转让、买卖、抵押。<br>
+						3）由于会员对持有的会员ID及密码的保管不当、使用上的过错等而造成的损失由该会员承担。<br>
+						4）本公司不承担任何责任。使用会员ID和密码利用本服务的行为，即认为由会员本人进行的行为，会员对服务的使用承担一切责任。<br>
+						5）当怀疑或得知会员ID或密码被第三方知悉及可能被非法使用时，应立即通知本公司，并按照本公司发出的指示执行。由于对会员ID及密码的不正当使用，而导致本公司发生损失时，该会员应赔偿本公司的损失。<br>
+						6）会员有义务定期更改密码。因疏忽此项义务而造成的损失，本公司不承担任何责任。<br>
+						7）非公司特别认可，原则上不补发会员ID和密码。<br>
+					</p>
+
+
+					<h4>第四条（提交申请的内容变更）</h4>
+					<p>
+						1）会员入会申请时提交的注册内容发生变化时，应立即按规定格式提交变更申请。<br>
+						2）本公司按照会员登录的联系方式发送公司的通知，并按常规到达的时间默认为送达。<br>
+					</p>
+
+
+					<h4>第五条（个人信息的处理）</h4>
+					<p>
+						本公司使用会员个人信息的目的如下。<br>
+						1）本公司集团根据前项的各种使用目的，可以共同使用公司持有的个人信息及积分等使用记录。如会员ID、姓名、性别、邮件地址、电话号码、邮政编码、地址、公司名称所属部门等、昵称、笔名、生日、信用卡信息、购物记录、积分。<br>
+						2）本公司遵循隐私政策保护个人信息，不向第三方提供具有可识别性的个人信息。<br>
+					</p>
+
+					
+					<h4>第六条（退会）</h4>
+					<p>
+						1）会员可以按照本公司规定的手续办理退会手续。<br>
+						2）会员离世本公司将会员的离世视为退会时间，会员ID及密码将不能继续使用。<br>
+					</p>
+
+
+					<h4>第七条（停止会员资格及除名）</h4>
+					<p>
+						本公司由于以下理由，可以在不通知或催告会员的情况下，暂时停止会员资格或除名。<br>
+						1）本人或指使他人不正当地使用会员ID、密码及本服务时；<br>
+						2）会员被执行没收、暂时没收、暂时处理、强制执行、破产、要求民事重整时，或会员自己提出请求时；<br>
+						3）密码输入错误次数高于本公司规定的次数时；<br>
+						4）在本公司规定的期间内，没有使用本服务时；<br>
+						5）其他，会员违反本协议或个别协议的任何条款时；<br>
+						6）其他，本公司认为会员不符合要求时。<br>
+					</p>
+					
+
+					<h4>第八条（本服务的内容)</h4>
+					<p>
+						本服务是国际电子商务物流的服务。
+						由于不是本公司与销售公司达成商品的买卖关系，因此本公司不成为买卖合同的当事人。公司不承担一切与商品相关的瑕疵、侵害知识产权等责任。但，如果会员有证据证明商品的遗失、破损发生在本公司保管及运输期间内，则不受本条限制。
+					</p>
+
+					
+					<h4>第九条（本服务禁止使用的商品）</h4>
+					<p>
+						以下商品，不能使用本服务。<br>
+						1）现金及支票.汇票.证券以及其他有价证券类；<br>
+						2）信用卡.现金卡等卡类；<br>
+						3）金融机关的存折以及现金提款卡；<br>
+						4）包裹上的送达地不易识别为本公司商号，也没有其他文字记载；<br>
+						5）活的动植物.死的动物或剥制的动物（即标本）；<br>
+						6）人体或人体的一部分.遗体.遗骨.牌位；<br>
+						7）兴奋剂.大麻.麻药.作用于中枢神经影响精神状态的药物以及其他违禁药物；<br>
+						8）枪炮.刀剑.武器.兵器.火药类.爆炸物.有毒物.有毒化学物品；<br>
+						9）医药品.医疗器械；<br>
+						10）儿童色情画.成人色情录像带以及其他淫秽物品；<br>
+						11）其运送.进出口受包括经由国在内的进出口国.州.地方自治体的法令禁止或限制的物品；<br>
+						12）航空.运输公司的运输协议中不允许承运的其他物品；<br>
+						13）本公司不予承运的物品。<br>
+						(i) 奢侈品包类,比如；LV、GUCCI等； <br>
+						(ii) 电子产品类，比如：电视；<br>
+						(iii) 电子元器件类，比如：测量仪、集成电路板、激光头等；<br>
+						(iv) 商业性质货件，比如：汽车摩托车配件、仪表、仪器等；<br>
+						(v) 危险品液体类、喷雾类、气压类、刀具类货件，比如：打火机（不论是否含油）、指甲油、生发水、香水、带气球类、藏刀、厨具刀、野外用刀、瑞士军刀、剪刀；<br>
+						(vi) 生物试剂类，比如：血浆、血清制品等；<br>
+						(vii) 古董类，比如古董字画、古董瓷器等；<br>
+						(viii) 食品类，比如西洋参、燕窝、食用油、鲜肉、鱼、水果、蔬菜、海鲜干货（如海参、鱼翅等）等；<br>
+						(ix) 其他类，比如烟、酒、象牙、犀牛角和（镶有象牙和犀牛角的货物）等。<br>
+					</p>
+
+
+					<h4>第十条（本服务的价格和支付条件）</h4>
+					<p>
+						1）本服务费用如价格表所示。本公司可对价格表进行变更，恕不另行通知。计价依据的商品重量，以本公司的计量结果为准。<br>
+						2）本服务费用包括从本公司运送到会员处的单程运输费。关税或发生从本公司到会员处的运输费以外的其他费用（以下简称为“特别费用”）时，由会员承担实际发生的费用。本公司没有义务垫付特别费用。<br>
+						3）会员可通过支付宝、财付通、银行转账等方法支付我司的服务费用。<br>
+					</p>
+					
+
+					<h4>第十一条（订购商品的联系方法）</h4>
+					<p>
+						会员购入商品后，应立即按公司规定的方式，系统到货预报本公司接收商品所需的确切信息。<br>
+					</p>
+
+					<h4>第十二条（验货）</h4>
+					<p>
+						1）本公司可以开封检查商品内容。但是，本公司并没有检验商品的义务，同时检验的结果也不对商品质量、有无瑕疵、真赝品做出保证，不保证商品不违反发出地、经由地、目的地所颁布的相关法令。<br>
+						2）公司在进行前项规定的检验中，如果发现有违反“防止转移犯罪收益”相关的法律法令，怀疑有违反可能性的商品时，本公司可以采取报告警察及相关公署，提交商品等措施。<br>
+						3）若检验商品及采取本条规定的处理办法造成会员损失时，本公司不承担任何责任。<br>
+					</p>
+
+
+					<h4>第十三条（拒绝提供本服务）</h4>
+					<p>
+						如发生或可能发生以下情况，即使已经承接的业务也可拒绝提供本服务。<br>
+						1）属于第九条规定的商品时；<br>
+						2）不能确认会员的所在地或商品发送目的地的地址时；<br>
+						3）会员拒绝接收商品时；<br>
+						4）会员拒绝支付服务费时；<br>
+						5）运输公司不进行商品的运输时；<br>
+						6）没有收到第十一条的通知时；<br>
+						7）根据第十一条的规定从会员处收到的有关商品信息的通知，与本公司收到的商品不相符时，或者第十一条的通知内容不正确时；<br>
+						8）被海关扣留时；<br>
+						9）会员违反本协议时；<br>
+						10）公司认为不符合规定的其他情况时。<br>
+					</p>
+
+
+					<h4>第十四条（不能转运商品的处理）</h4>
+					<p>
+						如发生或可能发生以下情况，即使已经承接的业务也可拒绝提供本服务。<br>
+						1）本公司收到第九条规定的商品时，可以马上废弃或以其他方法处置。<br>
+						2）当发生第十三条规定的情况（不包括13(1)）时，如果本公司已经接收了商品，则从接收日开始保管45天。<br>
+						3）会员如果在本条第2项规定的期限内，解决了与第十三条规定相违的所有事由，可以要求本公司将商品发送到会员的地址或在本公司认可的方法中指定一种。<br>
+						4）会员如果在本条第2项规定的期间内未能解决与第十三条规定相违的所有事由，本公司有权出售该商品或采取其他方法处置。<br>
+						5）公司根据本条第4项规定出售商品后，商品销售收入可以充当保管以及处置商品所需费用、本服务的费用以及其他费用。<br>
+						6）按本条规定处置商品时，即使会员受损失，本公司也不承担任何责任。<br>
+						7）无论本条的规定如何，本公司均可以按民事执行法的规定办理。<br>
+					</p>
+
+					<h4>第十五条（本服务的中断和停止）</h4>
+					<p>
+						发生以下任何情况时，本公司可以暂时中断或停止本服务的部分或全部内容，恕不另行通知。<br>
+						1）对提供本服务的装置和系统进行保养检查以及更新时；<br>
+						2）遇到火灾、停电、天灾、系统故障等，难以提供本服务时；<br>
+						3）电力通信公司未提供必需的服务时；<br>
+						4）本公司认为必须暂时中断或停止此项服务的其他情况；即使因暂时中断或停止提供本服务，而使会员遭受损失时，本公司也不承担任何责任。<br>
+					</p>
+
+					<h4>第十六条（禁止行为）</h4>
+					<p>
+						会员在使用本服务中，不得有属于或有可能属于以下任何一项的行为。<br>
+						1）以不正当的目的使用本服务的行为；<br>
+						2）侵害本公司以及第三方的商标权、著作权、外观专利权、发明专利权等知识产权以及肖像权、广告宣传权以及其他权利；<br>
+						3）涉及欺诈等犯罪的行为；<br>
+						4）伪装第三方使用本服务的行为；<br>
+						5）不正当地使用本公司以及第三方的设备，或阻碍运营的行为；<br>
+						6）违反法令、本协议或个别协议，以及违反公共秩序和社会道德的行为；<br>
+						7）妨害本服务运营的行为；<br>
+						8）公司认为不符合规定的其他行为。
+						由于会员违反本协议或个别协议，使得本公司遭到损失时，本公司可以要求会员赔偿损失。<br>
+					</p>
+
+					<h4>第十七条（适用范围和管辖）</h4>
+					<p>
+						本服务条款之解释与适用，以及与本服务条款有关的争议，均应依照中华人民共和国法律予以处理。
+					</p>
+				</div>
+				<div class="protocol-btn">
+					<button>同意并继续</button>
+				</div>
+			</div>
+		</div>
+
+		<a class='dialog-close' href="javascript:;void(0)">x</a>
+	</div>
+
+
+</body>
+<script src="../common/libs/jquery-1.8.3.min.js"></script>
+<script src="../common/libs/jquery.validate.min.js"></script>
+<script src="../common/libs/messages_zh.min.js"></script>
+<script src="../common/js/global.js"></script>
+<script src="js/register.js"></script>

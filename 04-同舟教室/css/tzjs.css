@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* @ 同舟教室:导航页与详情页 || 2016-10-03 */
+#banner {
+  width: 100%;
+}
+#banner a {
+  display: block;
+  width: 100%;
+}
+#banner a img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+#issue .nav {
+  float: left;
+  width: 250px;
+  background: #fff;
+  border: 1px solid #0072B8;
+}
+#issue .nav .item {
+  width: 100%;
+  overflow: hidden;
+}
+#issue .nav .name {
+  width: 230px;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  color: #e05a5a;
+  font-size: 20px;
+  text-align: left;
+  background: #424b50;
+}
+#issue .nav .list {
+  width: 100%;
+  border-top: none;
+}
+#issue .nav .list li {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #ddd;
+}
+#issue .nav .list li a {
+  display: block;
+  padding-left: 25px;
+  margin-left: 25px;
+  zoom: 1;
+  color: #333;
+  font-size: 14px;
+  background: url(../img/icon2.png) left center no-repeat;
+}
+#issue .nav .list li.on, #issue .nav .list li:hover {
+  background: #0072B8;
+}
+#issue .nav .list li.on a, #issue .nav .list li:hover a {
+  color: #FFF;
+  background-image: url(../img/icon1.png);
+}
+#issue .box {
+  float: left;
+  width: 882px;
+  min-height: 267px;
+  padding: 20px;
+  margin-left: 24px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+#issue .box-hd {
+  color: #424b50;
+  height: 36px;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+#issue .box-hd strong {
+  color: #ed5736;
+}
+#issue .box-bd {
+  overflow: hidden;
+}
+#issue .box-bd .news-col li {
+  display: block;
+  overflow: hidden;
+  height: 46px;
+  line-height: 46px;
+  border-bottom: 1px dashed #ddd;
+}
+#issue .box-bd .news-col li span {
+  float: right;
+}
+#issue .box-bd .news-col li a {
+  display: block;
+  width: 80%;
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#issue .box-bd .news-col li a:hover {
+  color: #ed5736;
+}
+
+#issue .detail-title {
+  padding: 30px 0 20px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .5px;
+  border-bottom: 1px #E6E6E6 dashed;
+}
+#issue .detail-content {
+  overflow: hidden;
+  padding: 0 30px 40px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+#issue .detail-content p {
+  padding: 5px 0;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=tzjs.css.map */

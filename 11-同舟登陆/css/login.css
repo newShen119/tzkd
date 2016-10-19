@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* @ login.css 登录 || 2016-10-13 */
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.content {
+  height: 520px;
+  padding: 30px 0 100px 0;
+  background-image: url(../img/login_bg.jpg);
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/login_bg.jpg', sizingMethod='scale' );
+}
+.content a {
+  transition: .5s;
+  font-size: 14px;
+}
+.content a:hover {
+  color: red;
+}
+
+#login-form {
+  overflow: hidden;
+}
+#login-form .line {
+  float: left;
+  width: 1px;
+  height: 307px;
+  margin-left: 100px;
+  background: #000;
+}
+#login-form .login-left {
+  float: left;
+  padding: 20px;
+  margin-left: 150px;
+  border: 1px #333 solid;
+  overflow: hidden;
+}
+#login-form .login-left .item {
+  position: relative;
+  margin-bottom: 30px;
+}
+#login-form .login-left .item .validate-tip {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: 50px;
+}
+#login-form .login-left .un, #login-form .login-left .pw {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border: 1px #666 solid;
+  border-radius: 6px;
+}
+#login-form .login-left .un .item-label, #login-form .login-left .pw .item-label {
+  float: left;
+  width: 50px;
+  color: #fff;
+  text-align: center;
+  background: black;
+}
+#login-form .login-left .un input, #login-form .login-left .pw input {
+  float: left;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+  width: 240px;
+  padding: 0;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+#login-form .login-left .ex {
+  overflow: hidden;
+}
+#login-form .login-left .ex .autoLogin {
+  float: left;
+}
+#login-form .login-left .ex .autoLogin #autoLogin {
+  margin-top: 1px;
+}
+#login-form .login-left .ex .forgetPw {
+  float: right;
+}
+#login-form .login-left .submit input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  background: #167ce1;
+  border-radius: 14px;
+  cursor: pointer;
+}
+#login-form .login-right {
+  float: left;
+  width: 328px;
+  padding: 20px;
+  margin-left: 80px;
+  overflow: hidden;
+}
+#login-form .login-right .weixin {
+  overflow: hidden;
+}
+#login-form .login-right .weixin img {
+  width: 118px;
+  float: left;
+}
+#login-form .login-right .weixin .img-text {
+  float: left;
+  margin-left: 20px;
+}
+#login-form .login-right .weixin .img-text p {
+  line-height: 55px;
+}
+#login-form .login-right .login-right-bottom p {
+  line-height: 40px;
+}
+#login-form .login-right .login-right-bottom a {
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  border-radius: 25px;
+  font-size: 18px;
+  text-align: center;
+  background: #167ce1;
+}
+
+input + span.error {
+  position: absolute;
+  top: 37px;
+  left: 50px;
+  color: red;
+}
+
+/*# sourceMappingURL=login.css.map */

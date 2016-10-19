@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="../common/css/common.css"/>
+	<link rel="stylesheet" href="../common/css/h-t-f.css">
+	<link rel="stylesheet" href="../common/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css"/>
+	<title>同舟快递-同舟首页</title>
+
+	<!-- RGBA兼容处理 -->
+	<!--[if IE 9]>
+	   <style type="text/css">
+		   .color-block {
+		       background:transparent;
+		       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+		       zoom: 1;
+		    }
+	    </style>
+	<![endif]-->
+
+
+</head>
+<body>
+
+	<!-- header开始 -->
+	<div id="header">
+		<div class="w clearfix">
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<ul class="nav">
+				<li>
+					<a href="javascript:;void(0)">同舟首页</a>
+				</li>
+				<li>
+					<a href="../02-我的同舟/01-会员中心.html">我的同舟</a>
+				</li>
+				<li>
+					<a href="../03-同舟返利/ztfl.html">同舟返利</a>
+				</li>
+				<li>
+					<a href="../04-同舟教室/rmwt.html">同舟教室</a>
+				</li>
+				<li>
+					<a href="../05-同舟服务/ztfw.html">同舟服务</a>
+				</li>
+				<li>
+					<a href="../06-同舟计费/tzjf.html">同舟计费</a>
+				</li>
+				<li>
+					<a href="../07-同舟新闻/tzxw.html">同舟新闻</a>
+				</li>
+				<li>
+					<a href="../08-关于同舟/gytz.html">关于同舟</a>
+				</li>
+				<li>
+					<a href="../09-联系我们/index.html">联系我们</a>
+				</li>
+			</ul>
+			<div id="login">
+				<a class="login-link" href="../11-同舟登陆/login.html">登录</a>
+				<a class="regist-link" href="../12-同舟注册/register.html">注册</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- banner开始 -->
+	<div id="banner">
+		<div class="slider"></div>
+		<div class="w clearfix">
+			<!-- 登录框 -->
+			<div class="login color-block">
+				<h3>用户登录</h3>
+				<form id="login-form" name="login-form">
+					<div class="item item1">
+						<label class="icon-un" for="username"></label>
+						<input type="text" name="username" id="username" placeholder="请输入您的用户名"/>
+					</div>
+					<div class="item item2">
+						<label class="icon-pw" for="password"></label>
+						<input type="text" name="password" id="password" placeholder="请输入您的密码"/>
+					</div>
+					<div class="item3">
+						<a class="forget-pw" href="javascript:;void(0)">忘记密码？</a>
+						<a class="upload" href="javascript:;void(0)">上传证件</a>
+					</div>
+					<div class="item4">
+						<input class="fl" type="submit" id="submit" value="登录"/>
+						<input class="fr" type="button" id="register" value="注册"/>
+					</div>
+				</form>
+			</div>
+			<div class="login login-success color-block"  style="display: none;">
+				<h3>
+					<span>gaoxiong</span>
+					<a href="#">[退出]</a>
+				</h3>
+				<div class="col">
+					<a href="#">会员中心</a>
+					<a href="#">等待支付</a>
+					<a href="#">在线充值</a>
+				</div>
+				<div class="col">
+					<a href="#">账单管理</a>
+					<a href="#">地址簿</a>
+					<a href="#">留言反馈</a>
+				</div>
+				<div class="col">
+					<a href="#">客服QQ：<img src="img/qq_talk.png"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 滚动消息开始 -->
+	<div id="news-list">
+		<div class="w clearfix">
+			<span class="broadcast">最新公告:</span>
+			<div class="listBox">
+				<ul class="list">
+					<li class="item">
+						<a href="#">不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样不要这样1</a>
+					</li>
+					<li class="item">
+						<a href="#">十有八九是骗子把戏十有八十有八九是骗子把戏十有八九是骗子把戏九是骗子把戏十有八九是骗子把戏十有八九是骗子把戏十有八九是骗子把戏2</a>
+					</li>
+					<li class="item">
+						<a href="#">2016年受欢迎的13家全球时尚电商平台2016年受欢迎的13家全球时尚电商平台2016年受欢迎的13家全球时尚电商平台3</a>
+					</li>
+				</ul>
+			</div>
+			<a class="fr value" href="#">重要通知：同舟OR（俄勒冈）免税州地址变更 </a>
+		</div>
+	</div>
+
+	<!-- 包裹追踪开始 -->
+	<div  class="m" id="package">
+		<div class="w cleafix">
+			<h3>包裹追踪</h3>
+			<p class="en">Package Track</p>
+			<p class="line"></p>
+			<div class="search">
+				<input class="text" type="text" placeholder="输入快递单号、运单号或订单号 搜索"/>
+				<input class="btn" type="submit" value="提交"/>
+			</div>
+		</div>
+	</div>
+
+	<!-- 转运流程开始 -->
+	<div  class="m" id="flow">
+		<div class="w clearfix">
+			<h3>简化海淘转运流程</h3>
+			<p class="en">News Information</p>
+			<p class="line"></p>
+			<div class="box">
+				<div class="item">
+					<dl>
+						<dt>
+							<img src="img/flow-01.png"/>
+						</dt>
+						<dd>
+							<p>Sep 1. 任意海外网站购买商品</p>
+							<p>Step 2. 收货信息填写您专属同舟地址</p>
+							<p>Step 3. 完成付款</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="item">
+					<dl>
+						<dt>
+							<img src="img/flow-02.png"/>
+						</dt>
+						<dd>
+							<p>Step 1. 包裹运送至同舟海外仓库</p>
+							<p>Step 2. 包裹存入用户专属个人储物架</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="item">
+					<dl>
+						<dt>
+							<img src="img/flow-03.png"/>
+						</dt>
+						<dd>
+							<p>Step 1. 同舟官网上完成运费支付</p>
+							<p>Step 2. 包裹发往国内</p>
+							<p>Step 3. 商品安全迅速到达您手中</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 新闻动态开始 -->
+	<div class="m" id="news">
+		<div class="w clearfix">
+			<h3>新闻动态</h3>
+			<p class="en">News Information</p>
+			<p class="line"></p>
+
+			<!-- 新闻动态左边 -->
+			<div class="news-heading">
+				<a class="heading-bg" href="javascript:;void(0)">
+					<img src="img/news-01.png"/>
+				</a>
+				<p>海关打电话说“邮包被扣”？ 十有八九是骗子把戏,一切为了去库存 北京和鄂尔多斯分别出大招了</p>
+			</div>
+
+			<!-- 新闻动态右边：固定为三个最新新闻-->
+			<div class="news-body">
+
+				<!-- 一个新闻 -->
+				<div class="news-item">
+					<h4>
+						<a href="javascript:;vodi(0)">一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 </a>
+					</h4>
+					<p class="news-text">“你的邮包被海关扣了要交税。”“你的邮包里面有毒品被海关查封了！”如果接到这样的电话，请提高警惕，即使邮包有问题，海关工作人员也不会直接给收件人打电话!海关来电谨慎市民会再确认“我们在日常工作中，也会接到市民拨打过来的确认电话。”驻邮局办事处通关科的关员介绍...</p>
+					<p class="news-time">
+						<span class="time"> 2016-10-10</span>
+						<img class="hot" src="img/hot.png"/>
+						<img class="new" src="img/new.png"/>
+					</p>
+				</div>
+
+				<!-- 一个新闻 -->
+				<div class="news-item">
+					<h4>
+						<a href="javascript:;vodi(0)">一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存</a>
+					</h4>
+					<p class="news-text">“你的邮包被海关扣了要交税。”“你的邮包里面有毒品被海关查封了！”如果接到这样的电话，请提高警惕，即使邮包有问题，海关工作人员也不会直接给收件人打电话!海关来电谨慎市民会再确认“我们在日常工作中，也会接到市民拨打过来的确认电话。”驻邮局办事处通关科的关员介绍...</p>
+					<p class="news-time">
+						<span class="time"> 2016-10-10</span>
+						<img class="hot" src="img/hot.png"/>
+						<img class="new" src="img/new.png"/>
+					</p>
+				</div>
+
+				<!-- 一个新闻 -->
+				<div class="news-item">
+					<h4>
+						<a href="javascript:;vodi(0)">一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存 北京和鄂尔多斯分别出大招了 首发一切为了去库存</a>
+					</h4>
+					<p class="news-text">“你的邮包被海关扣了要交税。”“你的邮包里面有毒品被海关查封了！”如果接到这样的电话，请提高警惕，确认“我们在日常工作中，也会接到市民拨打过来的确认电话。”驻邮局办事处通关科的关</p>
+					<p class="news-time">
+						<span class="time"> 2016-10-10</span>
+						<img class="hot" src="img/hot.png"/>
+						<img class="new" src="img/new.png"/>
+					</p>
+				</div>
+
+				<a class="more" href="#">点击查看更多新闻动态</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 同舟计费开始 -->
+	<div class="m" id="charge">
+		<div class="w clearfix">
+			<h3>同舟计费</h3>
+			<p class="en">News Information</p>
+			<p class="line"></p>
+			<table>
+				<thead>
+					<tr>
+						<td>线路指南</td>
+						<td>A-标准渠道</td>
+						<td class="red">C-关税补贴渠道</td>
+						<td>D-目的地香港</td>
+						<td>E-美国邮政USPS</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>价格</td>
+						<td>￥26/磅</td>
+						<td>￥39/磅</td>
+						<td>￥28/磅</td>
+						<td>首磅￥58 续磅￥26</td>
+					</tr>
+					<tr>
+						<td>身份证</td>
+						<td>需要</td>
+						<td class="red">不需要</td>
+						<td class="red">不需要</td>
+						<td class="red">不需要</td>
+					</tr>
+					<tr>
+						<td>时效 工作日</td>
+						<td>9-14</td>
+						<td>7-10</td>
+						<td>7-10</td>
+						<td>7-10</td>
+					</tr>
+					<tr>
+						<td>最高限重</td>
+						<td>无限重</td>
+						<td>8磅</td>
+						<td>16磅</td>
+						<td>16磅</td>
+					</tr>
+					<tr>
+						<td>服装鞋帽</td>
+						<td>8磅内</td>
+						<td>8磅内</td>
+						<td>不限</td>
+						<td>不限</td>
+					</tr>
+					<tr>
+						<td>奶粉
+						</td><td>6罐内</td>
+						<td>2罐内</td>
+						<td>不限</td>
+						<td>不限</td>
+					</tr>
+					<tr>
+						<td>电子产品</td>
+						<td>最多一个</td>
+						<td>最多一个</td>
+						<td>不限</td>
+						<td>最多一个</td>
+					</tr>
+					<tr>
+						<td>保健品</td>
+						<td>8瓶内</td>
+						<td>6瓶内</td>
+						<td>不限</td>
+						<td>不限</td>
+					</tr>
+					<tr>
+						<td>化妆品/洗护用品</td>
+						<td>化妆品(2件/箱)洗护用品(5件/箱)</td>
+						<td>2磅内</td>
+						<td>不限</td>
+						<td>不限</td>
+					</tr>
+					<tr>
+						<td>CD书籍等音像制品</td>
+						<td>4磅内</td>
+						<td>禁止</td>
+						<td>不限</td>
+						<td>不限</td>
+					</tr>
+					<tr>
+						<td>包/表（一线品牌除外）</td>
+						<td colspan="3">最多一个</td>
+						<td>不限</td>
+					</tr>
+					<tr>
+						<td>一线奢侈品包类表类</td>
+						<td class="red" colspan="3">禁止</td>
+						<td>包一个，手表不承运</td>
+					</tr>
+					<tr>
+						<td>苹果全系列产品</td>
+						<td class="red" colspan="3">禁止</td>
+						<td>一个</td>
+					</tr>
+					<tr>
+						<td>海产品(海参,花旗参)</td>
+						<td class="red" colspan="4">禁止</td>
+					</tr>
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="desc" colspan="5" style="color:red;background: #ebf4fe">
+						一、为符合清关要求，超过标准的包裹同舟会自动为您分箱处理。<br>
+						二、积分只有标准和关税补贴渠道可以使用。<br>
+						三、A口岸收件人必须提供有效期内的二代身份证正反面，要做到各类信息清晰可辨，无反光。提交运单时务必详细准确的申报物品品牌品名数量，以及提供真实准确的收件人信息。查询税率详情请见“中华人民共和国进境物品归类表”。<br>
+						四、OR免税州需收取附加操作费每磅￥6.5元人民币（以入库重量为准）<br>五、D-香港专线,UCS 美港渠道,是美国始发，目的地是香港的</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+
+	<!-- 同舟服务开始 -->
+	<div class="m" id="serve">
+		<div class="w clearfix">
+			<h3>同舟服务</h3>
+			<p class="en">News Information</p>
+			<p class="line"></p>
+			<div class="item item1">
+				<h4>专属</h4>
+				<img src="img/serve-01.png"/>
+				<h4>隐私有保护</h4>
+				<p>为每位用户定制的个人专属仓库</p>
+				<p>保护隐私的同时避免了发货失误</p>
+			</div>
+			<div class="item item2">
+				<h4>划算</h4>
+				<img src="img/serve-02.png"/>
+				<h4>计重很科学</h4>
+				<p>无首重、为用户提供高性价比的服务</p>
+			</div>
+			<div class="item item3">
+				<h4>安全</h4>
+				<img src="img/serve-03.png"/>
+				<h4>转运有保障</h4>
+				<p>联手众安保险为用户提供全程联保服务</p>
+				<p>让您的货物安全无忧</p>
+			</div>
+			<div class="item item4">
+				<h4>透明</h4>
+				<img src="img/serve-04.png"/>
+				<h4>跟踪实时追</h4>
+				<p>全程监控可以进行实时追踪</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 合作企业开始 -->
+	<div class="m" id="partner">
+		<div class="w clearfix">
+			<h3>合作企业</h3>
+			<p class="en">News Information</p>
+			<p class="line"></p>
+			<ul>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-01.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-02.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-03.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-04.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-05.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-06.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-07.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-08.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-09.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-10.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-11.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;void(0)">
+						<img src="img/partner-12.png"/>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 侧边固定 -->
+	<div id="toolbar">
+		<a class="t1" href="javascript:;void(0)">
+			<i class="fa fa-arrow-circle-up"></i>
+			<span>返回顶部</span>
+		</a>
+		<a class="t2" href="javascript:;void(0)">
+			<i class=" fa fa-envelope"></i>
+			<span>客服邮箱</span>
+		</a>
+		<a class="t3" href="javascript:;void(0)" >
+			<i class="fa fa-headphones"></i>
+			<span>自助服务</span>
+		</a>
+	</div>
+
+	<!-- 底部footer开始 -->
+	<div id="footer">
+		<div class="w clearfix">
+			<!-- footer左边 -->
+			<div class="item1 fl">
+				<div class="links">
+					<a href="#">关于同舟</a>
+					<span>|</span>
+					<a href="#">同舟客服</a>
+					<span>|</span>
+					<a href="#">同舟教室</a>
+					<span>|</span>
+					<a href="#">免责声明</a>
+					<span>|</span>
+					<a href="#">联系我们</a>
+				</div>
+				<div class="serve">
+					<p>客服热线：40066977798 </p>
+					<div id="qq"><img src="../common/img/qq.png"/></div>
+				</div>
+				<p>电子邮箱：contact.ship188@gmail.com</p>
+				<p>公司地址：939 Radecki Ct, City of Industry, CA 91748</p>
+				<div class="copyright">
+					<p>© CALIFORNIA HEAD QUARTER 版权所有 2010-2014</p>
+					<a href="#">
+						<img src="../common/img/site.gif"/>
+					</a>
+				</div>
+			</div>
+			<!-- footer右边 -->
+			<div class="item2 fr">
+				<div class="weixin">
+					<img src="../common/img/weixin.png"/>
+					<p>关注同舟微信服务号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script src="../common/libs/jquery-1.8.3.min.js"></script>
+<script src="js/index.js"></script>
+<script src="../common/js/global.js"></script>
+</html>

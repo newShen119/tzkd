@@ -1,0 +1,1500 @@
+@charset "UTF-8";
+/* @ 我的同舟 || 2016-10-12  */
+.content {
+  padding: 30px 0;
+  font-size: 14px;
+}
+.content .position {
+  height: 40px;
+  line-height: 40px;
+  padding-bottom: 5px;
+  color: #303030;
+  font-size: 14px;
+  border-bottom: 1px #eee solid;
+}
+.content .position span {
+  color: #177ce1;
+}
+
+#sub {
+  float: left;
+  width: 200px;
+  background: #fff;
+}
+#sub h3 {
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+  color: #fff;
+  background: #424b50;
+}
+#sub .list li {
+  height: 30px;
+  line-height: 30px;
+  border-top: 1px solid #ddd;
+}
+#sub .list li a {
+  display: block;
+  padding-left: 40px;
+  background: url(../img/icon1.png) 18px center no-repeat;
+}
+#sub .list li:hover, #sub .list li.on {
+  background: url(../img/icon.gif) right center no-repeat;
+  background-color: #0072B8;
+}
+#sub .list li:hover a, #sub .list li.on a {
+  color: #fff;
+  background: url(../img/icon2.png) 18px center no-repeat;
+}
+
+.main {
+  float: left;
+  width: 950px;
+  padding: 0 13px 30px 13px;
+  margin-left: 24px;
+  background: #fff;
+}
+
+.red {
+  color: red;
+}
+
+.main a:hover {
+  color: red;
+}
+
+/*公共样式：@content*/
+.content-position {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-bottom: 1px #ddd solid;
+}
+
+.content-position-last {
+  color: #177ce1;
+}
+
+.content-name {
+  font-size: 20px;
+}
+
+/*公共项：@关于表单*/
+.fm-item {
+  margin: 25px 0;
+  line-height: 32px;
+}
+
+.fm-item:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.fm-item .item-label {
+  float: left;
+  min-width: 110px;
+  text-align: right;
+}
+
+.fm-item .item-value {
+  float: left;
+  width: 260px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.fm-item .item-value .input {
+  width: 250px;
+  height: 24px;
+  padding: 3px 5px;
+  border: 1px solid #666;
+}
+
+.fm-item .input-check-tip {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+.fm-item .item-tip {
+  float: left;
+  margin-left: 20px;
+}
+
+.fm-item .fm-tip {
+  float: left;
+  margin-left: 20px;
+}
+
+.fm-tit {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ffe3cb;
+}
+
+/*@表单按钮*/
+.fm-sbt .sbt,
+.fm-sbt .btn {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background: #177ce1;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.fm-sbt .btn {
+  margin-left: 30px;
+}
+
+/*@关于表格*/
+.tb-tip {
+  margin-top: 20px;
+  padding: 20px 0 20px 12px;
+  line-height: 24px;
+  background: #ffe3cb;
+}
+
+.tb-tip h3 {
+  line-height: 30px;
+}
+
+.tb-tip p {
+  padding-left: 15px;
+}
+
+/*公共样式：后面添加*/
+.cont-hd {
+  height: 40px;
+  line-height: 40px;
+  color: #303030;
+  font-size: 18px;
+  border-bottom: 1px #ddd dashed;
+}
+
+/*我的同舟 => 上传购物凭证 || 2016-10-7*/
+.scgwpz .fm-item .item-label {
+  float: left;
+  width: 110px;
+  text-align: right;
+}
+
+.scgwpz .fm-item input {
+  outline: none;
+  width: 250px;
+  height: 25px;
+  padding: 3px 5px;
+  border: 1px solid #333;
+}
+
+.scgwpz .fm-item .search-btn {
+  outline: none;
+  width: 100px;
+  height: 33px;
+  padding: 0;
+  margin-left: -5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: #999;
+  font: 14px/1.5 tahoma,arial,"微软雅黑";
+}
+
+.scgwpz .fm-item .item-value {
+  float: left;
+  width: 262px;
+  position: relative;
+}
+
+.scgwpz .fm-item .input-check-tip {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+.scgwpz .fm-item .item-value .file-btn {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 33px;
+  color: #fff;
+  background: url(../img/upload.png) 0 0 no-repeat;
+}
+
+.scgwpz .fm-item .item-value .file-btn input {
+  position: absolute;
+  width: 120px;
+  opacity: 0;
+}
+
+.scgwpz .fm-sbt {
+  margin-left: 17px;
+}
+
+.scgwpz .fm-sbt input {
+  outline: none;
+  width: 80px;
+  height: 35px;
+  color: #fff;
+  background-color: #999;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.scgwpz .fm-sbt .button {
+  margin-left: 20px;
+}
+
+.form {
+  padding: 10px;
+  background: #ccc;
+  border: 1px solid #ff6c00;
+}
+
+/*我的同舟 => 财务管理 => 在线充值 zxcz || 2016-10-11*/
+.zxcz .search-box .search-text {
+  outline: none;
+  width: 296px;
+  height: 28px;
+  line-height: 28px;
+  padding: 3px 6px;
+  border: 1px #333 solid;
+}
+
+.zxcz .search-box .search-btn {
+  outline: none;
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  margin-left: -5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: #177ce1;
+  font: 14px/1.5 tahoma,arial,"微软雅黑";
+}
+
+.zxcz .tab-nav {
+  height: 30px;
+  border-bottom: 2px solid #C81623;
+}
+
+.zxcz .tab-nav-item {
+  float: left;
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  border: 1px #ccc solid;
+}
+
+.zxcz .tab-nav-item.on {
+  color: #fff;
+  background: #ff7500;
+  border-color: #f50;
+}
+
+.zxcz .tab-main {
+  border: 1px #C81623 solid;
+}
+
+.zxcz .tab-main .p-img {
+  float: left;
+  width: 74px;
+  height: 26px;
+  margin-top: 10px;
+}
+
+.zxcz .tab-main .p-img img {
+  width: 100%;
+}
+
+.zxcz .tab-main .p-text {
+  float: left;
+  margin-left: 24px;
+}
+
+.zxcz .tab-main .clearfix {
+  padding: 12px;
+  height: 42px;
+}
+
+.zxcz .tab-main .text {
+  outline: none;
+  width: 296px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 6px;
+  border: 1px #999 solid;
+}
+
+.zxcz .fm-item {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 110px;
+}
+
+.zxcz .fm-check-tip {
+  display: none;
+}
+
+.zxcz .fm-sbt {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 110px;
+}
+
+.zxcz .fm-sbt .submit {
+  outline: none;
+  width: 133px;
+  height: 41px;
+  margin-right: 20px;
+  color: #fff;
+  background-color: #C81623;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.zxcz .tip {
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-width: 2px;
+  background: #fffdee;
+  border: 2px solid #edd28b;
+}
+
+/*我的同舟 => 推广管理 => 积分明细  jfmx  || 2016-10-11*/
+.tb .tb-tit h3 {
+  font-weight: 600;
+}
+
+.tb .tb-tit p {
+  padding-left: 20px;
+}
+
+.pagin {
+  margin-top: 20px;
+}
+
+.pagin span {
+  padding: 2px 8px;
+  margin-left: 5px;
+}
+
+.pagin a {
+  padding: 2px 6px;
+  margin-left: 8px;
+}
+
+.pagin .current {
+  padding: 2px 6px;
+  margin-right: 3px;
+  color: #ff0084;
+  font-weight: bold;
+}
+
+.pagin span.disabled {
+  color: #adaaad;
+  margin-right: 3px;
+}
+
+.bill-search {
+  padding: 10px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.bill-search .search-data {
+  width: 150px;
+  margin-right: 10px;
+  height: 27px;
+  line-height: 27px;
+  padding: 3px 4px;
+  border: 1px #999 solid;
+}
+
+.bill-search .btn {
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  background: #e45050;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+/*我的同舟 => 推广管理 => 我的活跃度 || 2016-10-11*/
+.tb table {
+  margin-top: 20px;
+}
+.tb .tb-tit {
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: #c30;
+  font-size: 12px;
+  background: #faf0e1;
+  border: 1px #eacea7 solid;
+}
+.tb .tb-tit h3 {
+  font-weight: 600;
+}
+.tb .tb-tit p {
+  padding-left: 20px;
+}
+
+/*我的同舟 => 服务报价 => 价格计算器 2016-10-11*/
+.tgdm .form {
+  padding: 20px 5px;
+  border-top: 1px solid #eacea7;
+  border-right: 1px solid #eacea7;
+  border-left: 1px solid #eacea7;
+  background: #faf0e1;
+}
+
+/*我的同舟 => 服务报价 => 价格计算器 2016-10-12*/
+.jgjsq .fm-item .select {
+  width: 123px;
+}
+
+.fm-sbt .sbt {
+  width: 100px;
+  margin-left: 20px;
+}
+
+.jgjsq .fm-item.item1 .select {
+  width: 260px;
+  height: 28px;
+}
+
+/*我的同舟 => 其他管理 => 留言反馈 || 2016-10-12*/
+/*搜索留言*/
+.feedback .form {
+  margin: 20px 0;
+  background: #ccc;
+}
+
+.feedback .fm-item .select {
+  width: 123px;
+  height: 30px;
+}
+
+.feedback .item-tip {
+  margin-left: 0;
+}
+
+.feedback .item-tip .sc-note,
+.feedback .item-tip .ad-note {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background: #478ce1;
+  cursor: pointer;
+}
+
+.feedback td a {
+  padding: 0 5px;
+}
+
+.feedback .fm-item .textarea {
+  width: 600px;
+  height: 100px;
+}
+
+.fm-sbt {
+  margin-left: 35px;
+}
+
+/*我的同舟 => 其他管理 => 消息中心 || 2016-10-12*/
+/*分页*/
+.pn {
+  height: 40px;
+  line-height: 40px;
+  background: #c1d9f3;
+}
+
+.pn .delete,
+.pn .selectAll {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  width: 60px;
+  padding: 4px;
+  margin-right: 10px;
+  text-align: center;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+/*我的同舟 => 其他管理 => 消息中心 => 消息中心详情页 || 2016-10-12 */
+.news {
+  padding-left: 20px;
+  background: #eee;
+  border: 1px #ddd solid;
+}
+.news .news-list {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.news .news-list ul {
+  position: absolute;
+  left: 0;
+  height: 30px;
+  overflow: hidden;
+}
+.news .news-list li {
+  float: left;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.news-box {
+  min-height: 500px;
+  padding: 5px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "宋体";
+}
+.news-box p {
+  line-height: 30px;
+}
+.news-box .news-tit {
+  padding: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.news-box .news-line {
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
+.news-box .news-time {
+  padding: 50px 50px 50px 0;
+  overflow: hidden;
+}
+.news-box .news-time span {
+  display: block;
+  text-align: right;
+}
+.news-box .news-cont {
+  padding: 12px;
+  line-height: 24px;
+  font-family: "宋体";
+  font-size: 18px;
+}
+.news-box .news-text {
+  margin: 8px 0;
+  text-indent: 2em;
+}
+
+/*我的同舟 => 在线运输 => 订单状态 => 发货完成 || 2016-10-9 */
+.fhwc .search-box .search-text {
+  outline: none;
+  width: 296px;
+  height: 28px;
+  line-height: 28px;
+  padding: 3px 6px;
+  border: 1px #333 solid;
+}
+
+.fhwc .search-box .search-btn {
+  outline: none;
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  margin-left: -5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: #177ce1;
+  font: 14px/1.5 tahoma,arial,"微软雅黑";
+}
+
+.fhwc table td {
+  margin: 20px 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.fhwc table strong {
+  color: #175a88;
+  margin-right: 5px;
+}
+
+.fhwc table input {
+  display: block;
+  width: 100px;
+  height: 35px;
+  margin: 20px 0;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #177ce1;
+}
+
+/*我的同舟 => 订单状态 => 等待发货 ddfh专属类  || 2016-10-9*/
+.ddfh .search-box .search-text {
+  outline: none;
+  width: 296px;
+  height: 28px;
+  line-height: 28px;
+  padding: 3px 6px;
+  border: 1px #333 solid;
+}
+
+.ddfh .search-box .search-btn {
+  outline: none;
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  margin-left: -5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: #177ce1;
+  font: 14px/1.5 tahoma,arial,"微软雅黑";
+}
+
+.ddfh table td {
+  text-align: left;
+  font-size: 12px;
+}
+
+.ddfh table strong {
+  color: #175a88;
+  margin-right: 5px;
+}
+
+.ddfh table input {
+  display: block;
+  width: 100px;
+  height: 35px;
+  margin: 20px 0;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #177ce1;
+}
+
+.search-box .search-text {
+  outline: none;
+  width: 296px;
+  height: 28px;
+  line-height: 28px;
+  padding: 3px 6px;
+  border: 1px #333 solid;
+}
+
+.search-box .search-btn {
+  outline: none;
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  margin-left: -5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: #177ce1;
+  font: 14px/1.5 tahoma,arial,"微软雅黑";
+}
+
+/*我的同舟 => 订单状态 => 等待支付 ddzf类  || 2016-10-9*/
+.search-box .search-text {
+  outline: none;
+  width: 296px;
+  height: 28px;
+  line-height: 28px;
+  padding: 3px 6px;
+  border: 1px #333 solid;
+}
+
+.search-box .search-btn {
+  outline: none;
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  margin-left: -5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: #177ce1;
+  font: 14px/1.5 tahoma,arial,"微软雅黑";
+}
+
+.ddzf table td {
+  font-size: 12px;
+  text-align: left;
+}
+
+.ddzf table strong {
+  color: #175a88;
+  margin-right: 5px;
+}
+
+.ddzf table input {
+  display: block;
+  width: 90px;
+  height: 30px;
+  margin: 20px 0;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #177ce1;
+}
+
+/*我的同舟 => 订单状态 => 等待支付 ddcl类  || 2016-10-9 01:30:35*/
+.ddcl table td {
+  width: 20%;
+  padding: 5px;
+  font-size: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.ddcl table strong {
+  color: #175a88;
+  margin-right: 5px;
+}
+
+.ddcl table input {
+  width: 90px;
+  height: 30px;
+  margin: 20px 0;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #177ce1;
+}
+
+/*我的同舟 => 创建订单 => 货件拆包 || 2016-10-8 */
+.hjcb .fm-item .item-label {
+  float: left;
+  width: 130px;
+  text-align: right;
+}
+
+.hjcb .fm-item .item-value {
+  float: left;
+  width: 262px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.hjcb .fm-item .item-tip {
+  float: left;
+  margin-left: 5px;
+}
+
+.hjcb .fm-item input[type=text] {
+  width: 220px;
+  height: 18px;
+  padding: 3px 5px;
+  border: 1px solid #ddd;
+}
+
+.hjcb .fm-item .input-check-tip {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+.hjcb .fm-item i {
+  margin: 0 5px;
+  color: red;
+  font-style: normal;
+}
+
+.hjcb .fm-item select {
+  padding: 5px;
+  border: 1px #ddd solid;
+}
+
+.hjcb .tb-tit {
+  padding: 10px;
+  line-height: 24px;
+  text-align: left;
+  background: #f5eee7;
+}
+
+.hjcb #product-info input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.hjcb #product-info td {
+  position: relative;
+}
+
+.hjcb #product-info td .input-check-tip {
+  display: none;
+  position: absolute;
+  top: 31px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/valid_icons.png) -40px -20px no-repeat;
+}
+
+.hjcb .fm-sbt {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.hjcb .fm-sbt input {
+  outline: none;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #177ce1;
+}
+
+.hjcb .fm-sbt .reset {
+  margin-left: 30px;
+  background: #cbcbcb;
+}
+
+.hjcb .notice {
+  width: 580px;
+  height: 80px;
+  padding: 5px;
+  line-height: 20px;
+  border: solid 1px #747474;
+}
+
+.hjcb select {
+  padding: 5px;
+  border: 1px #666 solid;
+}
+
+/*我的同舟 => 创建订单 => 货件合并 hjhb类 || 2016-10-12*/
+.cont-hd {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  border-bottom: 1px #ddd dashed;
+}
+
+.hjhb .fm-title {
+  padding-bottom: 10px;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.hjhb .fm-item {
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+.hjhb .fm-item .input-check-tip {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+.hjhb .fm-item i {
+  margin: 0 5px;
+  color: red;
+  font-style: normal;
+}
+
+.hjhb .fm-item select {
+  padding: 5px;
+  border: 1px #ddd solid;
+}
+
+.hjhb .tb-title {
+  padding: 10px;
+  line-height: 24px;
+  text-align: left;
+  background: #f5eee7;
+}
+
+.hjhb table input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.hjhb table td {
+  position: relative;
+}
+
+.hjhb table td .input-check-tip {
+  display: none;
+  position: absolute;
+  top: 31px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/valid_icons.png) -40px -20px no-repeat;
+}
+
+.hjhb .fm-sbt {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 70px;
+}
+
+.hjhb .fm-sbt input {
+  outline: none;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #177ce1;
+}
+
+.hjhb .fm-sbt .reset {
+  margin-left: 30px;
+}
+
+.hjhb .wharehouse-box {
+  width: 750px;
+  height: 200px;
+  margin-left: 48px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+}
+
+.hjhb .wharehouse-box .wharehouse-item {
+  height: 25px;
+  line-height: 25px;
+  margin: 5px 0 5px 10px;
+}
+
+/*我的同舟 => 订单管理 => 原箱转运 || 2016-10-7*/
+.yxzy .fm-title {
+  padding-bottom: 10px;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.yxzy .fm-item {
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+.yxzy .fm-item .item-label {
+  float: left;
+  width: 130px;
+  text-align: right;
+}
+
+.yxzy .fm-item .item-value {
+  float: left;
+  width: 262px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.yxzy .fm-item .item-tip {
+  float: left;
+  margin-left: 20px;
+}
+
+.yxzy .fm-item input {
+  width: 250px;
+  height: 18px;
+  padding: 3px 5px;
+  border: 1px solid #ddd;
+}
+
+.yxzy .fm-item .input-check-tip {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+.yxzy .fm-item i {
+  margin: 0 5px;
+  color: red;
+  font-style: normal;
+}
+
+.yxzy .fm-item select {
+  padding: 5px;
+  border: 1px #ddd solid;
+}
+
+.yxzy .tb-title {
+  padding: 10px;
+  line-height: 24px;
+  text-align: left;
+  background: #f5eee7;
+}
+
+.yxzy #product-info input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.yxzy #product-info td {
+  position: relative;
+}
+
+.yxzy #product-info td .input-check-tip {
+  display: none;
+  position: absolute;
+  top: 31px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/valid_icons.png) -40px -20px no-repeat;
+}
+
+.yxzy .fm-sbt {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 70px;
+}
+
+.yxzy .fm-sbt input {
+  outline: none;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #177ce1;
+}
+
+.yxzy .fm-sbt .reset {
+  margin-left: 30px;
+  background: #cbcbcb;
+}
+
+/*我的同舟 => 添加收件人地址 || 2016-10-6*/
+/*我的同舟 => 添加发件人地址 || 2016-10-6*/
+.tjsjrdz.main .put-address,
+.tjfjrdz.main .put-address {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 15px;
+}
+
+.tjsjrdz.main .add-cn-address,
+.tjfjrdz.main .add-cn-address {
+  padding: 10px 20px;
+  background-color: #177CE1;
+  color: #fff;
+}
+
+.tjsjrdz.main .add-cn-address:hover,
+.tjfjrdz.main .add-cn-address:hover {
+  color: red;
+}
+
+.tjsjrdz.main table,
+.tjfjrdz.main table {
+  width: 100%;
+  margin-top: 30px;
+  color: #303030;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tjsjrdz .edit,
+.tjsjrdz .remove,
+.tjfjrdz .edit,
+.tjfjrdz .remove {
+  width: 40px;
+  height: 25px;
+  padding: 5px;
+  color: #fff;
+  background: #177CE1;
+  cursor: pointer;
+}
+
+.tjsjrdz i,
+.tjfjrdz i {
+  margin: 0 5px;
+  color: red;
+  font-style: normal;
+}
+
+.tjsjrdz #add-ads-fm select,
+.tjfjrdz #add-ads-fm select {
+  width: 118px;
+  height: 30px;
+  border: 1px solid #333;
+}
+
+.tjsjrdz #add-ads-fm .fm-sbt,
+.tjfjrdz #add-ads-fm .fm-sbt {
+  margin-left: 110px;
+}
+
+.tjsjrdz .put-address span,
+.tjfjrdz .put-address span {
+  padding: 0 5px;
+}
+
+.tjsjrdz .put-address input,
+.tjfjrdz .put-address input {
+  width: 150px;
+  height: 18px;
+  line-height: 18px;
+  padding: 2px 2px 2px 5px;
+  border: 1px #666 solid;
+}
+
+.tjsjrdz .put-address p,
+.tjfjrdz .put-address p {
+  float: right;
+}
+
+.tjsjrdz .main table,
+.tjfjrdz .main table {
+  margin-top: -2px;
+}
+
+.tjsjrdz #show-pic,
+.tjfjrdz #show-pic {
+  margin-left: 23px;
+  cursor: pointer;
+  color: red;
+}
+
+.tjsjrdz #file-data,
+.tjfjrdz #file-data {
+  display: block;
+  height: 30px;
+  width: 121px;
+  color: #fff;
+  text-align: center;
+  background: url(../img/upload-icon.png) center center no-repeat;
+}
+
+.tjsjrdz #file-data input,
+.tjfjrdz #file-data input {
+  position: absolute;
+  width: 121px;
+  left: 0;
+  opacity: 0;
+}
+
+/*我的同舟 => 账号管理 => 修改密码 || 2016-10-6 完成*/
+.xgmm .fm-tip i {
+  margin: 0 3px;
+  color: red;
+  font-style: normal;
+}
+
+.xgmm .fm-sbt {
+  margin-top: 20px;
+  margin-left: 114px;
+}
+
+/*我的同舟 => 账号管理 => 修改资料 || 2016-10-6 完成*/
+.xgzl .item-label {
+  width: 150px;
+}
+
+.xgzl select {
+  display: inline-block;
+  width: 200px;
+  height: 33px;
+  padding: 5px;
+  line-height: 33px;
+  border: 1px #666 solid;
+}
+
+.xgzl .fm-sbt {
+  margin-left: 157px;
+}
+
+/*我的同舟 => 会员中心 || 2016-9-28 */
+.main.user-center {
+  width: 668px;
+}
+
+.user-center .main-header {
+  width: 660px;
+  height: 86px;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.user-center .main-header .u-face {
+  float: left;
+  margin-top: 13px;
+}
+
+.user-center .main-header .u-text {
+  float: left;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.user-center .main-header .u-text a {
+  margin-left: 10px;
+}
+
+.user-center .main-header .u-text a:hover {
+  color: #f10000;
+}
+
+.user-center .main-header .u-account {
+  float: right;
+  margin-top: 13px;
+}
+
+.user-center .main-header .u-account .account-remain .num {
+  display: inline-block;
+  padding: 0 5px;
+  color: red;
+  font-size: 20px;
+}
+
+.user-center #recharge {
+  display: block;
+  height: 29px;
+  margin: 0 auto;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f84941;
+}
+
+.user-center .item {
+  background: #fff;
+  padding: 10px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.user-center .item-bd {
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.user-center .account-info .account-bd-left {
+  float: left;
+}
+
+.user-center .account-info .account-bd-right {
+  float: right;
+}
+
+.user-center .has-table table {
+  width: 100%;
+  margin-top: 14px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.user-center .has-table table tr {
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.user-center .has-table table tr td {
+  border: 1px #c9c9c9 solid;
+}
+
+#side {
+  float: right;
+  width: 270px;
+  margin-left: 12px;
+  line-height: 30px;
+  background: #fff;
+}
+
+#side h3 {
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+  color: #eee;
+  font-size: 18px;
+  background: #218af4;
+}
+
+#side ul {
+  padding: 10px;
+}
+
+#side li {
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 30px;
+  border-bottom: 1px dashed #ddd;
+}
+
+#side a:hover {
+  color: #f10000;
+}
+
+/* @ 我的同舟 => 订单详情 || 2016-10-19 */
+.ddxq.main .cnt-position {
+  height: 40px;
+  padding-bottom: 5px;
+  line-height: 40px;
+  text-align: right;
+  font-size: 13px;
+  border-bottom: 1px #ccc solid;
+}
+
+.ddxq.main .cnt-position * {
+  margin-right: 4px;
+}
+
+.ddxq.main h3 {
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ddxq.main .step {
+  height: 40px;
+  margin-top: 20px;
+  line-height: 40px;
+  color: #c00;
+  border-bottom: 1px #ddd solid;
+}
+
+.ddxq.main .tb1 {
+  border-bottom: 1px #ccc solid;
+}
+
+.ddxq.main .tb1 .t1 {
+  width: 100px;
+  border: none;
+  text-align: right;
+}
+
+.ddxq.main .tb1 .t2 {
+  width: 600px;
+  border: none;
+  text-align: left;
+  text-indent: 0px;
+}
+
+.ddxq.main .tb3 .t1 {
+  width: 50px;
+  border: none;
+  text-align: right;
+}
+
+.ddxq.main .tb3 .t2 {
+  width: 600px;
+  border: none;
+  text-align: left;
+}
+
+.ddxq.main .back {
+  display: block;
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: center;
+  background: #177ce1;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/*提取公共样式 || 2016-10-13*/
+/*@左侧蓝色线体*/
+.blue-line {
+  position: relative;
+  height: 40px;
+  padding-left: 10px;
+  line-height: 40px;
+  padding: 5px 0 5px 10px;
+  color: #303030;
+  font-size: 18px;
+  border-bottom: 1px #ccc solid;
+}
+
+.blue-line:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 17px;
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background: blue;
+}
+
+/*@表格样式*/
+table {
+  width: 100%;
+}
+
+table tr {
+  width: 100%;
+}
+
+table td,
+table th {
+  padding: 10px;
+  text-align: center;
+  border: 1px #666 solid;
+}
+
+.tb-ft {
+  padding-left: 20px;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.cont-bd {
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+input + span.error, select + span.error {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: red;
+}
+
+/*# sourceMappingURL=index.css.map */

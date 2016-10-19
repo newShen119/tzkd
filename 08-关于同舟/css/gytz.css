@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* @ gytz.css 关于同舟 || 2016-10-16 */
+#banner {
+  width: 100%;
+  overflow: hidden;
+}
+#banner img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px 0;
+  overflow: hidden;
+}
+.content .w {
+  width: 1000px;
+  min-height: 600px;
+  padding: 20px;
+  font-size: 16px;
+  color: #474747;
+  line-height: 36px;
+}
+
+.side {
+  width: 135px;
+  float: left;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.side h3 {
+  font-size: 23px;
+  margin-bottom: 9px;
+}
+.side .item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #333;
+}
+.side .item.on a {
+  color: #eb1d21;
+}
+.side .item1 {
+  border-top: 1px dotted #333;
+}
+.side .item1 a {
+  display: inline-block;
+}
+
+.main {
+  width: 800px;
+  float: left;
+  margin-left: 24px;
+  overflow: hidden;
+}
+.main .news {
+  overflow: hidden;
+}
+.main .news img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.main .news .news-title {
+  margin-top: 0;
+  background-color: gray;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 12px 22px;
+}
+.main .news .news-detail {
+  border: 1px solid #bfbfbf;
+  background-color: #ffffff;
+}
+.main .news .news-content {
+  font-size: 13px;
+  padding: 13px 22px;
+}
+.main .news .news-content p {
+  margin-bottom: 9px;
+  line-height: 24px;
+  font-size: 13px;
+}
+.main .news .news-content .enhance-text {
+  color: #eb1d21;
+}
+.main .news .news-content h3 {
+  color: #eb1d21;
+  margin: 15px 0;
+  line-height: 24px;
+}
+.main .news .news-content ul {
+  margin-bottom: 9px;
+}
+.main .news .news-content ul li {
+  margin: 7px 0;
+  line-height: 24px;
+  margin-left: 19px;
+  list-style: disc;
+}
+.main .news .news-content .text-indent {
+  text-indent: 2em;
+}
+
+/*# sourceMappingURL=gytz.css.map */

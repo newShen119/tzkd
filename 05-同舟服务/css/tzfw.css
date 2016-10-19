@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* @tzfw.css   ||   同舟服务   ||   2016-10-1 */
+#banner {
+  width: 100%;
+}
+#banner a {
+  display: block;
+  width: 100%;
+}
+#banner a img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px 0;
+  overflow: hidden;
+}
+.content .w {
+  padding: 12px;
+  color: #000;
+  background: #fff;
+}
+.content .cont-hd h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #262627;
+  font: 800 20px/29px 微软雅黑;
+}
+.content .cont-bd {
+  min-height: 200px;
+  padding-top: 20px;
+}
+.content .cont-bd p {
+  padding-left: 24px;
+  padding-bottom: 20px;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .5px;
+}
+
+/*# sourceMappingURL=tzfw.css.map */

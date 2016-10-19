@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* @ register 注册页面  || 2016-10-13 完成*/
+#regist .w {
+  padding: 10px 0 30px 0;
+}
+#regist h2 {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  border-bottom: 1px red solid;
+}
+#regist .line {
+  float: left;
+  width: 1px;
+  height: 675px;
+  margin-left: 100px;
+  background: #ddd;
+}
+
+.reg-form .item {
+  position: relative;
+  height: 40px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.reg-form .item.focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.reg-form .item .txt {
+  float: left;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-right: 1px solid #ddd;
+}
+.reg-form .item input {
+  float: left;
+  width: 400px;
+  height: 36px;
+  padding: 2px 5px;
+  line-height: 36px;
+  color: #000;
+}
+.reg-form .item .validate-tip {
+  display: none;
+  position: absolute;
+  top: 46px;
+  left: 126px;
+}
+.reg-form .agree {
+  height: 30px;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+.reg-form .agree input {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin-top: -1px;
+  margin-right: 10px;
+}
+.reg-form .agree a {
+  color: #000;
+}
+.reg-form .btn-register {
+  width: 100%;
+  height: 54px;
+  color: #fff;
+  background: #f55;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+
+.reg-right {
+  margin-left: 100px;
+  overflow: hidden;
+}
+.reg-right .weixin {
+  overflow: hidden;
+}
+.reg-right .weixin img {
+  float: left;
+  width: 150px;
+}
+.reg-right .weixin .img-text {
+  float: left;
+  margin-left: 24px;
+}
+.reg-right .weixin .img-text p {
+  font-size: 25px;
+  line-height: 75px;
+}
+.reg-right .weixin-btm p {
+  font-size: 16px;
+  line-height: 40px;
+}
+.reg-right .weixin-btm a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #167ce1;
+}
+
+.mask {
+  z-index: 998;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: .7;
+  filter: alpha(opacity=70);
+  background: black;
+}
+
+.dialog {
+  z-index: 10000;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  width: 900px;
+  height: 600px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -450px;
+  overflow: hidden;
+  background: #fff;
+}
+.dialog .dialog-tit {
+  position: absolute;
+  top: 0;
+  width: 880px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  background: #f3f3f3;
+}
+.dialog .dialog-tit span {
+  color: #000;
+  font-weight: 600;
+}
+.dialog .dialog-cnt {
+  padding: 10px;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+  top: 35px;
+}
+.dialog .dialog-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background: #ccc;
+}
+.dialog .protocol-cnt {
+  height: 455px;
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: 25px;
+}
+.dialog .protocol-cnt h2 {
+  padding: 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+.dialog .protocol-cnt h4 {
+  font-weight: 600;
+}
+.dialog .protocol-cnt p {
+  margin: 20px 0;
+  line-height: 24px;
+}
+.dialog .protocol-btn button {
+  margin: 0 auto;
+  display: block;
+  width: 400px;
+  height: 54px;
+  color: #fff;
+  background: #e22;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+
+#verify_code {
+  position: absolute;
+  right: -88px;
+  top: 0;
+  width: 80px;
+  height: 40px;
+}
+#verify_code img {
+  width: 100%;
+  height: 100%;
+}
+
+span.error {
+  position: absolute;
+  top: 46px;
+  left: 125px;
+  color: red;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* @ wlcx.css 同舟快递 => 物流查询  || 2016-10-08 */
+#banner {
+  width: 100%;
+  overflow: hidden;
+}
+#banner a {
+  display: block;
+}
+#banner a img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px 0;
+}
+.content .cont-hd {
+  padding: 5px 0;
+}
+.content .cont-hd h2 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #ed5736;
+}
+.content .cont-bd {
+  padding: 15px 0;
+}
+
+.side {
+  float: left;
+  width: 300px;
+}
+.side .track-box {
+  height: 300px;
+  padding: 0 10px;
+  overflow: hidden;
+  color: #fff;
+  background: #424b50;
+}
+.side .track-input {
+  outline: none;
+  width: 267px;
+  height: 70px;
+  padding: 3px 6px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: #333;
+  border: 1px #333 solid;
+}
+.side .track-btn {
+  outline: none;
+  display: block;
+  width: 95px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #ed5736;
+}
+
+.main {
+  float: left;
+  width: 852px;
+  min-height: 276px;
+  padding: 12px;
+  margin-left: 24px;
+  background: #fff;
+}
+.main h2 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #ed5736;
+}
+
+.tb {
+  padding: 20px;
+  margin-top: 20px;
+}
+.tb table {
+  width: 100%;
+  line-height: 24px;
+  text-align: center;
+}
+.tb table tr {
+  width: 100%;
+}
+.tb table td {
+  padding: 5px;
+  border: 1px #666 solid;
+}
+
+/*# sourceMappingURL=wlcx.css.map */

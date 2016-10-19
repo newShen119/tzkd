@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* @本CSS文件包括 同舟新闻/同舟新闻详情页  || 2016-10-14 */
+/* @1：同舟新闻 */
+#banner {
+  width: 100%;
+}
+#banner a {
+  display: block;
+  width: 100%;
+}
+#banner a img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px 0;
+}
+
+.side {
+  float: left;
+  width: 268px;
+  min-height: 300px;
+  padding: 12px;
+  color: #fff;
+  background: #424b50;
+}
+.side h2 {
+  padding-left: 11px;
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ed5736;
+}
+.side span {
+  margin: 0 11px;
+}
+.side .col {
+  margin-bottom: 20px;
+}
+.side .col a {
+  margin: 0 10px;
+  color: #fff;
+}
+.side .col a:hover {
+  color: red;
+  transition: .5s;
+}
+
+.main {
+  float: left;
+  width: 860px;
+  min-height: 400px;
+  padding: 12px;
+  margin-left: 24px;
+  background: #fff;
+}
+.main h2 {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ed5736;
+  border-bottom: 1px #333 solid;
+}
+.main .news-list {
+  margin-top: 20px;
+}
+.main .news-list li {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  border-bottom: 1px  #ddd  dashed;
+}
+.main .news-list li a {
+  float: left;
+  width: 90%;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main .news-list li a:hover {
+  color: red;
+  transition: .5s;
+}
+.main .news-list li span {
+  float: right;
+}
+
+/* @1：同舟新闻详情页 */
+#page .w {
+  padding: 12px;
+  letter-spacing: .5px;
+  background: #fff;
+}
+#page h1 {
+  margin: 20px 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600px;
+  text-align: center;
+}
+#page .page-time {
+  margin: 20px 0;
+  text-align: center;
+}
+#page .page-text {
+  margin: 25px 0;
+  font-size: 15px;
+  line-height: 24px;
+  text-indent: 28px;
+  color: #333;
+}
+#page .page-img {
+  text-align: center;
+  margin: 20px 0;
+}
+#page .page-img img {
+  max-width: 60%;
+}
+#page blockquote {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=tzxw.css.map */

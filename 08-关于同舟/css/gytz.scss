@@ -1,0 +1,121 @@
+/* @ gytz.css 关于同舟 || 2016-10-16 */
+#banner{
+	width: 100%;
+	overflow: hidden;
+
+	img{
+		width: 100%;
+	}
+}
+
+.content {
+	padding: 30px 0;
+	overflow: hidden;
+
+	.w {
+		width: 1000px;
+		min-height: 600px;
+		padding: 20px;
+		font-size: 16px;
+		color: #474747;
+		line-height: 36px;
+	}
+}
+
+// 左边导航
+.side {
+	width: 135px;
+	float: left;
+	padding: 0 15px;
+	overflow: hidden;
+
+	h3 {
+		font-size: 23px;
+		margin-bottom: 9px;
+	}
+
+	.item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px dotted #333;
+
+		&.on {
+			a {
+				color: #eb1d21;
+			}
+		}
+	}
+
+	.item1 {
+		border-top: 1px dotted #333;
+
+		a {
+			display: inline-block;
+		}
+	}
+}
+
+// 右边内容
+.main {
+	width: 800px;
+	float: left;
+	margin-left: 24px;
+	overflow: hidden;
+
+	.news {
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.news-title {
+		    margin-top: 0;
+		    background-color: gray;
+		    color: #ffffff;
+		    font-size: 20px;
+		    padding: 12px 22px;
+		}
+
+		.news-detail {
+			border: 1px solid #bfbfbf;
+			background-color: #ffffff;
+		}
+
+		.news-content {
+			font-size: 13px;
+			padding: 13px 22px;
+
+			p {
+				margin-bottom: 9px;
+				line-height: 24px;
+				font-size: 13px;
+			}
+
+			.enhance-text {
+				color: #eb1d21;
+			}
+
+			h3 {
+				color: #eb1d21;
+				margin: 15px 0;
+				line-height: 24px;
+			}
+
+			ul {
+				margin-bottom: 9px;
+
+				li {
+					margin: 7px 0;
+					line-height: 24px;
+					margin-left: 19px;
+					list-style: disc;
+				}
+			}
+			.text-indent{
+				text-indent: 2em;
+			}
+		}
+	}
+}

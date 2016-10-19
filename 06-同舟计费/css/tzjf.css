@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* @tzjf.css 同舟计费 || 2016-10-16 */
+#banner {
+  width: 100%;
+}
+#banner a {
+  display: block;
+  width: 100%;
+}
+#banner a img {
+  width: 100%;
+}
+
+.content {
+  padding: 20px 0;
+  overflow: hidden;
+}
+.content .tb {
+  margin: 20px 0;
+  text-align: center;
+}
+.content .tb h2 {
+  padding: 20px;
+  font-size: 24px;
+}
+.content .tb table {
+  width: 100%;
+  overflow: hidden;
+}
+.content .tb table td {
+  width: 33.33%;
+  border: 1px #666 solid;
+}
+.content .tb table tr {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #404040;
+  line-height: 40px;
+}
+.content .tb table tr.info td {
+  padding-left: 20px;
+  font-size: 14px;
+  color: red;
+  text-align: left;
+  background-color: #dbecfd;
+}
+.content .tb table tr.last td {
+  padding-left: 20px;
+  color: red;
+  font-size: 16px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=tzjf.css.map */

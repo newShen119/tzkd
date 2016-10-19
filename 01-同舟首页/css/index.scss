@@ -1,0 +1,541 @@
+
+/*  @ 同舟首页 ||  2016-10-14  */
+
+//banner
+#banner {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	// slider容器
+	.slider {
+		.slider-pagination {
+			position: absolute;
+			bottom: 20px;
+			width: 200px;
+			bottom: 5px;
+			left: 0;
+			right: 0;
+			float: left;
+			margin-left: auto;
+		 	margin-right: auto;
+			li {
+			  	float: left;
+			  	width: 30px;
+			  	height: 20px;
+			  	margin-right: 10px;
+			  	line-height: 20px;
+			  	text-align: center;
+			  	cursor: pointer;
+			  	background: #666;
+			  	color: #fff;
+			    	&.active {
+			    		background: blue;
+			    	}
+			}
+		}
+		// 底部按钮
+		.slider-btn {
+			a {
+				position: absolute;
+				top: 50%;
+				width: 40px;
+				height: 60px;
+				margin-top: -30px;
+				line-height: 60px;
+				color: white;
+				text-align: center;
+				background: rgba(0,0,0,.5);
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+			}
+			.prev {
+				left: 0;
+			}
+			.next {
+				right: 0;
+			}
+		}
+	}
+	.w {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -600px;
+	}
+	.login {
+		position: absolute;
+		top:20px;
+		right: 5px;
+		width: 230px;
+		padding: 20px;
+		overflow: hidden;
+		background: rgba(0,0,0,.5);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+		h3 {
+			font-size: 17px;
+			color: #fff;
+			font-weight: normal;
+		}
+	}
+	.login-success {
+		height: 250px;
+		h3 {
+			margin-bottom: 20px;
+		}
+		.col {
+			padding: 10px 0;
+		}
+		a {
+			padding: 0 10px;
+			color: #fff;
+			transition: 1s;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+	#login-form {
+		.item {
+			position: relative;
+			height: 38px;
+			margin-top: 30px;
+			line-height: 38px;
+			border-radius: 6px;
+			border: 1px #ccc solid;
+			.icon-un,
+			.icon-pw {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 38px;
+				height: 38px;
+				background: url(../img/login-form.png) 0 0 no-repeat;
+			}
+			.icon-pw {
+				background: url(../img/login-form.png) -48px 0 no-repeat;
+			}
+			input {
+				float: left;
+				outline: none;
+				border: none;
+				width: 180px;
+				height: 30px;
+				padding: 4px;
+				line-height: 30px;
+				padding-left: 45px;
+			}
+		}
+		.item3 {
+			overflow: hidden;
+			margin-top: 20px;
+			a {
+				color: #fff;
+				font-size: 16px;
+
+				&:hover {
+					color: #E4393C;
+				}
+			}
+			.forget-pw {
+				float: left;
+			}
+			.upload {
+				float: right;
+			}
+		}
+		.item4 {
+			margin: 20px 0;
+			input {
+				outline: none;
+				width: 80px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				cursor: pointer;
+				background: transparent;
+				&.fl {
+					color: #fb6e0e;
+					border: solid 1px #fb6e0e;
+				}
+				&.fr {
+					border: solid 1px #00a0e9;
+					color: #00a0e9;
+				}
+			}
+		}
+	}
+}
+
+//滚动消息
+#news-list{
+	font-size: 16px;
+
+	.w {
+		padding: 18px 0;
+		overflow: hidden;
+		line-height: 28px;
+
+		.broadcast {
+			float: left;
+			height: 28px;
+			padding-left: 40px;
+			background: url(../img/broadcast.png) 0 0 no-repeat;
+		}
+
+		.listBox {
+			position: relative;
+			float: left;
+			width: 400px;
+			height:28px;
+			margin-left: 10px;
+			overflow: hidden;
+
+			.list {
+				position: absolute;
+				width: 100%;
+				overflow: hidden;
+
+				.item {
+					height: 28px;
+					line-height: 28px;
+
+					a {
+						display: block;
+						width: 100%;
+						overflow: hidden;
+						white-space: nowrap;  
+						text-overflow: ellipsis;
+					}
+					a:hover {
+						color: #f10000;
+					}
+				}
+			}
+		}
+		.value {
+			font-size: 16px;
+			color: #ff0000;
+		}
+	}
+}
+
+//公共样式
+.m {
+	h3 {
+		font-size: 30px;
+		font-weight: normal;
+		padding-top: 10px;
+	}
+
+	.en {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.line {
+		width: 127px;
+		height: 5px;
+		background: #1274c5;
+		margin: 10px auto;
+	}
+}
+
+//包裹追踪
+#package {
+	width: 100%;
+	height: 365px;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	background: url(../img/package.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+
+	.w {
+		margin-top: 50px;
+	}
+
+	.search {
+		height: 87px;
+		padding: 5px;
+		margin-top: 20px;
+		overflow: hidden;
+	
+		.text {
+			float: left;
+			width: 900px;
+			height: 57px;
+			padding: 15px;
+			outline: none;
+			line-height: 57px;
+			font-size: 26px;
+			background: #e1ebf8;
+		}
+		.btn{
+			float: left;
+			width: 150px;
+			height: 87px;
+			padding: 0;
+			outline: none;
+			border: none;
+			line-height: 87px;
+			font-size: 26px;
+			color: #fff;
+			background: #005faf;
+			cursor: pointer;
+			&:hover{
+				background: red;
+			}
+		}
+	}
+}
+
+//简化海淘流程
+#flow {
+	padding: 20px 0;
+	overflow: hidden;
+	text-align: center;
+
+	.box {
+	    	height: 280px;
+	    	margin-top: 50px;
+	    	overflow: hidden;
+
+		.item {
+			float: left;
+			width: 33.333%;
+			overflow: hidden;
+		}
+
+		dl {
+		    	padding-left: 120px;
+		    	font-size: 14px;
+		    	color: #323232;
+		    	text-align: left;
+
+		    	p {
+		    		line-height: 30px;
+		    	}
+		}
+	}
+}
+
+//新闻动态
+#news {
+   	padding-top: 20px;
+    	overflow: hidden;
+    	text-align: center;
+    	background: #eee;
+
+   	.news-heading {
+        		float: left;
+        		width: 326px;
+        		height: 468px;
+        		margin-top: 20px;
+        		text-align: left;
+        		overflow: hidden;
+		
+		a {
+			display: block;
+			width: 100%;
+			height: 300px;
+			margin-bottom: 20px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+        		p {
+        			font-size: 16px;
+        			color: #333;
+        			line-height: 30px;
+        		}
+    	}
+
+    	.news-body {
+        		float: left;
+        		width: 864px;
+        		height: 500px;
+        		margin-left: 10px;
+        		margin-top: 20px;
+        		text-align: left;
+        		overflow: hidden;
+    	}
+
+	.news-item {
+		height: 131px;
+	    	padding: 0 18px 5px 18px;
+	   	margin-bottom: 20px;
+	   	line-height: 34px;
+	   	background: #fff;
+	    	overflow: hidden;
+
+	    	h4 {
+	    		font-weight: normal;
+	    		margin: 5px 0;
+	    		height: 34px;
+	    		overflow: hidden;
+	    		white-space: nowrap;  
+	    		text-overflow: ellipsis;
+
+		    	a {
+		    		font-size: 21px;
+		    		color: #323232;
+		    		height: 34px;
+		    		overflow: hidden;
+
+		    		&:hover {
+		    			color: #e05a5a;
+		    			text-decoration: none;
+		    		}
+		    	}
+		}
+
+		.news-text {
+		    	width: 100%;
+		    	max-height: 48px;
+		    	overflow: hidden;
+		    	text-indent: 2em;
+		    	text-overflow: ellipsis;
+
+		    	p {
+		    		line-height: 24px;
+	    		    	font-size: 14px;
+	    		    	color: #717171;
+		    	}
+		}
+
+		.news-time {
+		    	padding: 5px 0;
+		    	text-align: right;
+		}
+
+		.hot,.new {
+		    	width: 30px;
+		    	margin-left: 5px;
+		}
+
+		p {
+		    	line-height: 24px;
+		    	color: #717171;
+		    	font-size: 14px;
+		}
+	}
+
+	.more {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		padding: 5px 0 5px 20px;
+		margin-top: -15px;
+		font-size: 16px;
+		text-align: center;
+		background: #ccc;
+
+		&:hover {
+			color: red;
+			transition: .5s;
+		}
+	}
+ }
+
+//同舟计费
+#charge{
+	padding: 20px;
+	overflow: hidden;
+	background: #fff;
+	text-align: center;
+
+	table {
+		width: 100%;
+		margin-top: 20px;
+	    	text-align: center;
+
+	   	tr {
+		    	font-size: 16px;
+		    	color: #404040;
+		    	height: 50px;
+		    	line-height: 50px;
+
+		    	td {
+		    		&.red {
+		    			color: #ff0000;
+		    		}
+
+		    		&.desc {
+		    			font-size:14px;
+		    			color:red;
+		    			text-align:left; 
+		    			line-height: 30px;
+		    			padding: 10px;
+		    		}
+		    	}
+	   	}
+	}
+}
+
+//同舟服务
+#serve {
+	padding: 20px;
+	overflow: hidden;
+	background: #eee;
+	text-align: center;
+	
+	.item {
+		float: left;
+		width: 270px;
+		height: 320px;
+		margin-right: 40px;
+		margin-top: 20px;
+		overflow: hidden;
+		background: #fff;
+
+		p {
+			font-size: 14px;
+			color: #6e6e6e;
+			line-height: 28px;
+		}
+
+		img {
+			max-width: 50%;
+		}
+	}
+
+	h4 {
+		font-size: 20px;
+		color: #272727;
+		font-weight: normal;
+		margin: 15px 0;
+	}
+	
+	.item4 {
+		margin-right: 0;
+	}
+}
+
+//合作企业
+#partner {
+	padding: 20px;
+	overflow: hidden;
+	background: #fafafa;
+	text-align: center;
+
+	li{
+		float: left;
+		width: 16.66%;
+		overflow: hidden;
+
+		a{
+			display: inline-block;
+			padding: 20px 22px 0 0;
+			overflow: hidden;
+		}
+
+		img {
+			width: 177px;
+		}
+	}
+}
+

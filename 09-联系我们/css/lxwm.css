@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* @ lxwm.css 联系我们 || 2016-10-08 */
+#banner {
+  width: 100%;
+  overflow: hidden;
+}
+#banner a {
+  display: block;
+}
+#banner img {
+  width: 100%;
+}
+
+.content {
+  padding: 30px;
+  overflow: hidden;
+}
+.content .w {
+  min-height: 400px;
+  padding: 20px;
+  overflow: hidden;
+  letter-spacing: .5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px blue;
+}
+.content p {
+  line-height: 40px;
+  color: #000;
+  font-size: 14px;
+  overflow: hidden;
+}
+.content p strong {
+  float: left;
+  width: 80px;
+  color: #0099ff;
+  text-align: right;
+}
+.content p span {
+  float: left;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=lxwm.css.map */

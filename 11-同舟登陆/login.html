@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>同舟快递：我的同舟</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../common/css/h-t-f.css">
+	<link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+
+	<!-- header开始 -->
+	<div id="header">
+		<div class="w clearfix">
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<ul class="nav">
+				<li>
+					<a href="../01-同舟首页/index.html">同舟首页</a>
+				</li>
+				<li>
+					<a href="../02-我的同舟/01-会员中心.html">我的同舟</a>
+				</li>
+				<li>
+					<a href="../03-同舟返利/ztfl.html">同舟返利</a>
+				</li>
+				<li>
+					<a href="../04-同舟教室/rmwt.html">同舟教室</a>
+				</li>
+				<li>
+					<a href="../05-同舟服务/ztfw.html">同舟服务</a>
+				</li>
+				<li>
+					<a href="../06-同舟计费/tzjf.html">同舟计费</a>
+				</li>
+				<li>
+					<a href="../07-同舟新闻/tzxw.html">同舟新闻</a>
+				</li>
+				<li>
+					<a href="../08-关于同舟/gytz.html">关于同舟</a>
+				</li>
+				<li>
+					<a href="../09-联系我们/">联系我们</a>
+				</li>
+			</ul>
+			<div id="login">
+				<a class="login-link" href="../11-同舟登陆/login.html">登录</a>
+				<a class="regist-link" href="../12-同舟注册/register.html">注册</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 中间内容 -->
+	<div class="content">
+		<div class="w clearfix">
+
+			<!-- 登录表单 -->
+			<form id="login-form">
+
+				<!-- 表单左边 -->
+				<div class="login-left">
+					<!-- 账户 -->
+					<div class="item un">
+						<label class="item-label" for="username">账 户</label>
+						<input id="username" type="text" name="username" placeholder="请输入您的用户名或手机号"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+
+					<!-- 密码 -->
+					<div class="item pw">
+						<label class="item-label" for="password">密 码</label>
+						<input id="password" type="password" name="password" placeholder="请输入您的密码"/>
+						<p class="validate-tip">验证信息</p>
+					</div>
+					
+					<!-- 自动登录和忘记密码 -->
+					<div class="item ex">
+						<div class="autoLogin">
+							<input id="autoLogin" type="checkbox" name="autoLogin"/>
+							<label for="autoLogin">自动登录</label>
+						</div>
+						<a class="forgetPw" href="javascript:;void(0)">忘记密码？</a>
+					</div>
+
+					<!-- 提交按钮 -->
+					<div class="item submit">
+						<input type="submit" value="登录" class="sbt"/>
+					</div>
+				</div>
+
+				<!-- 分割线 -->
+				<div class="line"></div>
+
+				<!-- 登录右边 -->
+				<div class="login-right">
+
+					<!-- 微信 -->
+					<div class="weixin">
+						<img src="img/weixin.png"/>
+						<div class="img-text">
+							<p>扫描微信二维码</p>
+							<p>关注同舟服务号</p>
+						</div>
+					</div>
+
+					<!-- 注册 -->
+					<div class="login-right-bottom">
+						<p >没有账号？</p>
+						<a href="../12-同舟注册/register.html">立即注册</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- 侧边固定 -->
+	<div id="toolbar">
+		<a class="t1" href="javascript:;void(0)">
+			<i class="fa fa-arrow-circle-up"></i>
+			<span>返回顶部</span>
+		</a>
+		<a class="t2" href="javascript:;void(0)">
+			<i class=" fa fa-envelope"></i>
+			<span>客服邮箱</span>
+		</a>
+		<a class="t3" href="javascript:;void(0)" >
+			<i class="fa fa-headphones"></i>
+			<span>自助服务</span>
+		</a>
+	</div>
+
+	<!-- 底部footer开始 -->
+	<div id="footer">
+		<div class="w clearfix">
+			<!-- footer左边 -->
+			<div class="item1 fl">
+				<div class="links">
+					<a href="#">关于同舟</a>
+					<span>|</span>
+					<a href="#">同舟客服</a>
+					<span>|</span>
+					<a href="#">同舟教室</a>
+					<span>|</span>
+					<a href="#">免责声明</a>
+					<span>|</span>
+					<a href="#">联系我们</a>
+				</div>
+				<div class="serve">
+					<p>客服热线：40066977798 </p>
+					<div id="qq"><img src="../common/img/qq.png"/></div>
+				</div>
+				<p>电子邮箱：contact.ship188@gmail.com</p>
+				<p>公司地址：939 Radecki Ct, City of Industry, CA 91748</p>
+				<div class="copyright">
+					<p>© CALIFORNIA HEAD QUARTER 版权所有 2010-2014</p>
+					<a href="#">
+						<img src="../common/img/site.gif"/>
+					</a>
+				</div>
+			</div>
+			<!-- footer右边 -->
+			<div class="item2 fr">
+				<div class="weixin">
+					<img src="../common/img/weixin.png"/>
+					<p>关注同舟微信服务号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="../common/libs/jquery-1.8.3.min.js"></script>
+<script src="../common/libs/jquery.validate.min.js"></script>
+<script src="../common/libs/messages_zh.min.js"></script>
+<script src="../common/js/global.js"></script>
+<script src="js/login.js"></script>
+</html>

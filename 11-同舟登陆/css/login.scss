@@ -1,0 +1,173 @@
+/* @ login.css 登录 || 2016-10-13 */
+
+#footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+.content {
+		height: 520px;
+		padding: 30px 0 100px 0;
+		background-image: url(../img/login_bg.jpg);
+		background-size: cover;
+	    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	    	src='../img/login_bg.jpg',
+	    	sizingMethod='scale'
+	    );
+	
+	a {
+		transition: .5s;
+		font-size: 14px;
+
+		&:hover{
+			color: red;
+		}
+	}
+}
+
+
+#login-form {
+	
+	overflow: hidden;
+
+	.line {
+		float: left;
+		width: 1px;
+		height: 307px;
+		margin-left: 100px;
+		background: #000;
+	}
+
+	.login-left {
+		float: left;
+		padding: 20px;
+		margin-left: 150px;
+		border: 1px #333 solid;
+		overflow: hidden;
+
+		.item {
+			position: relative;
+			margin-bottom: 30px;
+			
+			.validate-tip {
+				display: none;
+				position: absolute;
+				top: 34px;
+				left: 50px;
+			}
+		}
+
+		.un,.pw {
+				
+			height: 40px;
+			line-height: 40px;
+			font-size: 15px;
+			border: 1px #666 solid;
+			border-radius: 6px;
+
+			.item-label {
+				float: left;
+				width: 50px;
+				color: #fff;
+				text-align: center;
+				background: black;
+			}
+
+			input {
+				float: left;
+				outline: none;
+				height: 40px;
+				line-height: 40px;
+				width: 240px;
+				padding: 0;
+				padding-left: 10px;
+				border-radius: 6px; 
+			}
+		}
+
+		.ex {
+			overflow: hidden;
+
+			.autoLogin {
+
+				float: left;
+
+				#autoLogin {
+					margin-top: 1px;
+				}
+			}
+
+			.forgetPw {
+				float: right;
+			}
+		}
+		.submit {
+
+			input {
+				display: block;
+			    width: 300px;
+			    height: 40px;
+			    margin: 0 auto;
+			    color: #FFFFFF;
+			    font-size: 20px;
+			    text-align: center;
+			    background: #167ce1;
+			    border-radius: 14px;
+			    cursor: pointer;
+			}
+		}
+	}
+
+	.login-right {
+		float: left;
+		width: 328px;
+		padding: 20px;
+		margin-left: 80px;
+		overflow: hidden;
+
+		.weixin {
+			overflow: hidden;
+
+			img {
+				width: 118px;
+				float: left;
+			}
+
+			.img-text {
+				float: left;
+				margin-left: 20px;
+
+				p {
+					line-height: 55px;
+				}
+			}
+		}
+
+		.login-right-bottom {
+
+			p {
+				line-height: 40px;
+			}
+
+			a {
+				display: block;
+				width: 300px;
+				height: 40px;
+				line-height: 40px;
+				color: #FFFFFF;
+				border-radius: 25px;
+				font-size: 18px;
+				text-align: center;
+				background: #167ce1;
+			}
+		}
+	}
+}
+
+input + span.error {
+	position: absolute;
+	top: 37px;
+	left: 50px;
+	color: red;
+}
