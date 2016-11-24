@@ -277,7 +277,7 @@
 								<div class="fm-item">
 									<span class="item-label">拆包方式：</span>
 									<div class="item-value">
-										<input type="radio"/>
+										<input type="checkbox"/>
 										<p class="input-check-tip">验证信息</p>
 									</div>
 									<p class="item-tip"><i class="red">*</i>同舟合理安排拆包</p>
@@ -288,10 +288,16 @@
 								<div class="fm-item">
 									<span class="item-label">拆包个数：</span>
 									<div class="item-value">
-										<select>
-											<option value="test">2</option>
-											<option value="test">3</option>
-											<option value="test">4</option>
+										<select id="chaibaoNum">
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
 										</select>
 										<p class="input-check-tip">验证信息</p>
 									</div>
@@ -306,43 +312,46 @@
 									<span class="item-label">发件人：</span>
 									<div class="item-value">
 										<select>
-											<option value="test">2</option>
-											<option value="test">3</option>
-											<option value="test">4</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
 										</select>
 										<p class="input-check-tip">验证信息</p>
 									</div>
 									<p class="item-tip"><i class="red">*</i>请您预先在“发件人地址”中添加您的详细地址</p>
 								</div>
-								
-								<!-- 收件人1 -->
-								<div class="fm-item">
-									<span class="item-label">收件人1：</span>
-									<div class="item-value">
-										<select>
-											<option value="test">请选择收件人地址</option>
-											<option value="test">2</option>
-											<option value="test">3</option>
-											<option value="test">4</option>
-										</select>
-										<p class="input-check-tip">验证信息</p>
-									</div>
-									<p class="item-tip"><i class="red">*</i>请您预先在<a class="red" href="#">“收件人地址”</a>中添加您的详细地址</p>
-								</div>
 
-								<!-- 收件人2 -->
-								<div class="fm-item">
-									<span class="item-label">收件人2：</span>
-									<div class="item-value">
-										<select>
-											<option value="test">请选择收件人地址</option>
-											<option value="test">2</option>
-											<option value="test">3</option>
-											<option value="test">4</option>
-										</select>
-										<p class="input-check-tip">验证信息</p>
+
+	
+								<div id="receiptants">
+
+									<!-- 收件人1 -->
+									<div class="fm-item">
+										<span class="item-label">收件人1：</span>
+										<div class="item-value">
+											<select>
+												<option value="test">请选择收件人地址</option>
+											</select>
+											<p class="input-check-tip">验证信息</p>
+										</div>
+										<p class="item-tip"><i class="red">*</i>请您预先在<a class="red" href="#">“收件人地址”</a>中添加您的详细地址</p>
 									</div>
-									<p class="item-tip"><i class="red">*</i>请您预先在<a class="red" href="#">“收件人地址”</a>中添加您的详细地址</p>
+
+
+									<!-- 收件人2 -->
+									<div class="fm-item">
+										<span class="item-label">收件人2：</span>
+										<div class="item-value">
+											<select>
+												<option value="test">请选择收件人地址</option>
+												<option value="test">2</option>
+												<option value="test">3</option>
+												<option value="test">4</option>
+											</select>
+											<p class="input-check-tip">验证信息</p>
+										</div>
+										<p class="item-tip"><i class="red">*</i>请您预先在<a class="red" href="#">“收件人地址”</a>中添加您的详细地址</p>
+									</div>
 								</div>
 								
 								<!-- 拆包备注 -->
@@ -352,7 +361,6 @@
 										<textarea class="notice" cols="60" rows="6"></textarea>
 									</div>
 								</div>
-
 							</div>
 							
 							<div class="cont-hd">
@@ -482,4 +490,38 @@
 </body>
 <script src="../common/libs/jquery-1.8.3.min.js"></script>
 <script src="../common/js/global.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+
+
+		$("#chaibaoNum").on("change", function(){
+			var selectLength = parseInt($(this).val());
+			var remainLenth = selectLength - $("#receiptants > div").length;
+
+			if( remainLenth > 0 ) {
+
+				$("#receiptants").append(createRow(remainLenth, selectLength));
+
+			} else if( remainLenth < 0) {
+				remainLenth = Math.abs(remainLenth);
+				console.log(remainLenth);
+				for( var i = remainLenth ; i < selectLength ; i++){
+					$("#receiptants > div").eq(i).remove();
+				}
+
+			}
+		
+		})
+
+		function createRow(index1, index2) {
+
+			var result = '';
+			for( var i = index1; i <= index2; i++ ) {
+				result += '<div class="fm-item"><span class="item-label">收件人'+i+'：</span><div class="item-value"><select><option value="test">请选择收件人地址</option></select><p class="input-check-tip">验证信息</p></div><p class="item-tip"><i class="red">*</i>请您预先在<a class="red" href="#">“收件人地址”</a>中添加您的详细地址</p></div>';
+			}
+			return result;
+		}
+	})
+</script>
 </html>

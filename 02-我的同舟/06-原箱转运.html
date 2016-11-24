@@ -311,11 +311,13 @@
 							                <td>商品名称</td>
 							                <td>数量</td>
 							                <td>单价(￥/单位)</td>
-							                <td><img src="img/coll_add.gif"></td>
+							                <td style="cursor: pointer;" id="addOneRow">
+							                	<img src="img/coll_add.gif">
+							                </td>
 							            </tr>
 				             			<tr>
 				                            <td>
-				                            	<input type="text"/>
+				                            	<input type="text" value="1" />
 				                            	<span class="input-check-tip"></span>	
 				                            </td>
 				                            <td>
@@ -333,11 +335,14 @@
 				                            	<input type="text"/>
 				                            	<span class="input-check-tip"></span>
 				                            </td>
-				                            <td><img src="img/coll_del.gif"></td>
+				                            <td style="cursor: pointer;">
+				                            	<img src="img/coll_del.gif">
+				                            </td>
 				                        </tr>
 									</tbody>
 								</table>
 							</div>
+
 							<!-- 填写发件人收件人信息 -->
 							<div class="cont-hd">
 								<p>第三步：填写发件人收件人信息</p>
@@ -423,4 +428,23 @@
 </body>
 <script src="../common/libs/jquery-1.8.3.min.js"></script>
 <script src="../common/js/global.js"></script>
+<script type="text/javascript">
+
+	// 动态添加删除元素  在添加元素按钮上（td）添加 id addOneRow
+
+	$(function(){
+
+		$("#product-info").on("click", "tr .RemoveOneRow", function(){
+			$(this).parent().remove();
+		})
+
+		var RowString =	'<tr class="addedRow"><td><input type="text"><span class="input-check-tip"></span></td><td><input type="text" class=""><span class="input-check-tip"></span></td><td><input type="text" class=""><span class="input-check-tip"></span></td><td><input type="text"><span class="input-check-tip"></span></td><td><input type="text" class=""><span class="input-check-tip"></span></td><td style="cursor: pointer;" class="RemoveOneRow"><img src="img/coll_del.gif"></td></tr>';
+
+		$("#addOneRow").on("click", function(){
+			if( $(".addedRow").length < 9 ) {
+				$("#product-info").append(RowString);
+			}
+		})
+	})
+</script>
 </html>
