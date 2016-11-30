@@ -330,7 +330,10 @@
 										<span class="item-label">收件人1：</span>
 										<div class="item-value">
 											<select>
-												<option value="test">请选择收件人地址</option>
+												<option value="0">请选择收件人地址</option>
+												<option value="test">2</option>
+												<option value="test">3</option>
+												<option value="test">4</option>
 											</select>
 											<p class="input-check-tip">验证信息</p>
 										</div>
@@ -492,36 +495,25 @@
 <script src="../common/js/global.js"></script>
 <script type="text/javascript">
 
-	$(function(){
+	$("#chaibaoNum").on("change", function(){
+		var oldValue = parseInt($("#receiptants").find(".item-label").length); 
+		var newValue = parseInt($(this).val());
+		var balance = newValue - oldValue;
 
-
-		$("#chaibaoNum").on("change", function(){
-			var selectLength = parseInt($(this).val());
-			var remainLenth = selectLength - $("#receiptants > div").length;
-
-			if( remainLenth > 0 ) {
-
-				$("#receiptants").append(createRow(remainLenth, selectLength));
-
-			} else if( remainLenth < 0) {
-				remainLenth = Math.abs(remainLenth);
-				console.log(remainLenth);
-				for( var i = remainLenth ; i < selectLength ; i++){
-					$("#receiptants > div").eq(i).remove();
-				}
-
+		if( balance > 0 ) {
+			for ( var i = 1 ; i <= balance; i++){
+				$("#receiptants").append($("#receiptants").find(".fm-item").eq(0).clone(0));
 			}
-		
-		})
-
-		function createRow(index1, index2) {
-
-			var result = '';
-			for( var i = index1; i <= index2; i++ ) {
-				result += '<div class="fm-item"><span class="item-label">收件人'+i+'：</span><div class="item-value"><select><option value="test">请选择收件人地址</option></select><p class="input-check-tip">验证信息</p></div><p class="item-tip"><i class="red">*</i>请您预先在<a class="red" href="#">“收件人地址”</a>中添加您的详细地址</p></div>';
+			$.each($("#receiptants").find(".item-label"), function(index, value){
+				$(value).html("收件人"+(index+1));
+			})
+		} else if ( balance < 0 ) {
+			balance = Math.abs(balance);
+			for ( var j = 1 ; j <= balance ; j ++) {
+				$("#receiptants").find(".fm-item:last").remove();
 			}
-			return result;
 		}
 	})
+
 </script>
 </html>
