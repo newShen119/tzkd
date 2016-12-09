@@ -323,23 +323,9 @@ $(function(){
 	//给当前页对应header li 添加类
 	$("#header .nav li").eq(0).addClass("active");
 
-
-	$("tr:even").css({
-		background: "#a6c6f0"
-	})
-
-	//美化表格样式
-	$("tr:odd").find("td:odd").css({
-		"background": "#C5D9F1",
-	});
-
-	$("tr:odd").find("td:even").css({
-		"background": "#DBECFD",
-	});
-
-
 	// css3效果
 	$("#serve .item").css({
 		"box-shadow": " 0 0 50px black",
 	});
+
 })
