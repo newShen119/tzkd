@@ -7,7 +7,40 @@
 	<link rel="stylesheet" href="../common/libs/font-awesome-4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../common/css/h-t-f.css">
 	<link rel="stylesheet" href="css/index.css">
+	<style>
+		.hide-box {
+			margin-top: 20px;
+		}
+		
+		.hide-box ul {
+			overflow: hidden;
+		}
 
+		.hide-box ul li {
+			float: left;
+			height: 50px;
+			padding: 0px 20px;
+			line-height: 50px;
+		}
+		.hide-box ul li.item1{
+			margin-right: 20px;
+		}
+		.hide-box ul li.active {
+			color: #fff;
+			background-color: #167ce1;
+		}
+		.hide-box .box-content {
+			margin-top: 20px;
+		}
+		.hide-box .box-content span {
+			margin-left: 15px;
+			font-weight: 600;
+		}
+		.hide {
+			display: none;
+		}
+
+	</style>
 </head>
 <body>
 		
@@ -218,15 +251,86 @@
 						<p>
 							<img src="img/USA.png"/>
 							<span>美国 收货地址：加 州、俄勒冈州(免税州)</span>
-							<a class="red" href="#">【查看详情】</a>
+							<a class="red" href="javascript:;void(0)">【查看详情】</a>
 						</p>
+						<div class="hide-box hide">
+							<ul>
+								<li class="item1 active">美国加州仓库收货地址</li>
+								<li>俄勒冈州(免税州)</li>
+							</ul>
+							<div class="box-content">
+								<p>
+									<label>名(First Name)：</label>
+									<span> gao</span>
+								</p>
+								<p>
+									<label>姓(Last Name)：</label>
+									<span>TZJRZOB</span>
+								</p>
+								<p>
+									<label>收货地址(Street Address)：</label>
+									<span>939 Radecki Ct.</span>
+								</p>
+								<p>
+									<label>Apt/Suite/Other/Address2：</label>
+									<span> TZJRZOB</span>
+								</p>
+								<p>
+									<label>City：</label>
+									<span>City of Industry</span>
+								</p>
+								<p>
+									<label>State：</label>
+									<span>CA</span>
+								</p>
+								<p>
+									<label>ZIP CODE：</label>
+									<span>91748</span>
+								</p>
+								<p>
+									<label>联系电话：</label>
+									<span>626-377-9804</span>
+								</p>
+								<p class="red">转运包裹必须按照名(First Name)加上姓(Last Name)作收件人全名，否则入库出现问题，同舟不承担任何责任</p>
+							</div>
+							<div class="box-content hide">
+								<p>
+									<label>名(First Name)：</label>
+									<span> gao</span>
+								</p>
+								<p>
+									<label>姓(Last Name)：</label>
+									<span>TZJRZOB</span>
+								</p>
+								<p>
+									<label>收货地址(Street Address)：</label>
+									<span>939 Radecki Ct.</span>
+								</p>
+								<p>
+									<label>Apt/Suite/Other/Address2：</label>
+									<span> TZJRZOB</span>
+								</p>
+								<p>
+									<label>City：</label>
+									<span>City of Industry</span>
+								</p>
+								<p>
+									<label>State：</label>
+									<span>CA</span>
+								</p>
+								<p>
+									<label>ZIP CODE：</label>
+									<span>91748</span>
+								</p>
+								<p>
+									<label>联系电话：</label>
+									<span>626-377-9804</span>
+								</p>
+								<p class="red">免税州转运到加州需要每磅6.5元转运费，转运时效2-3个工作日。</p>
+							</div>
+						</div>
 					</div>
 				</div>
-
-
-
-
-
 
 				<!-- 待处理货件 -->
 				<div class="item">
@@ -247,9 +351,6 @@
 						</table>
 					</div>	
 				</div>
-
-
-
 
 				<!-- 留言与反馈 -->
 				<div class="item">
@@ -276,7 +377,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<!-- 右侧side开始 -->
 			<div id="side">
@@ -344,4 +444,18 @@
 </body>
 <script src="../common/libs/jquery-1.8.3.min.js"></script>
 <script src="../common/js/global.js"></script>
+<script type="text/javascript">
+	$(function(){
+
+		$(".receipt-address .red").on("click",function(){
+			$(".hide-box").show();
+		})
+
+		$(".receipt-address .hide-box li").on("click",function(){
+			var index = $(this).index();
+			$(this).addClass("active").siblings("li").removeClass("active");
+			$(".receipt-address .box-content").hide().eq(index).show();
+		})
+	})
+</script>
 </html>
