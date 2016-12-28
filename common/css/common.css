@@ -108,7 +108,7 @@ input, select,button {
  /* @common.css  ||  公共样式 */
 body {
     font: 13px/1.5 tahoma,arial,"微软雅黑";
-    color: #666;
+    color: #333;
     background: url(../img/bdbg.gif) 0 0;
 }
 
