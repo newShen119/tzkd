@@ -1,0 +1,131 @@
+
+		body {
+			background: #fb3c82;
+		}
+		.title {
+			margin: 45px auto;
+		}
+		.strip {
+			height: 18px;
+			background: url(chilun.png) 0 0 repeat;
+		}
+		.outerBox {
+			margin-top: -1px;
+			background: #da195f;
+		}
+		.outerBox .camera {
+			margin-left: -52px;
+		}
+
+		.innerBox {
+			margin-top: 35px;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-bottom: 80px;
+		}
+
+		.innerBox .showItem {
+			padding: 30px 42px;
+			margin-bottom: 2px;
+			background: #fff;
+			overflow: hidden;
+		}
+
+		.showItem .itemLeft {
+			float: left;
+			width: 95px;
+			margin-right: 35px;
+		}
+
+		.showItem .itemLeft p {
+			margin-bottom: 5px;
+			line-height: 30px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			text-align: center;
+		}
+		
+		.showItem .itemLeft .userInfo {
+			border: 1px solid #ccc;
+		}
+
+		.showItem .itemLeft .avator {
+			/*border: 1px solid red;*/
+		}
+
+		.showItem .itemRight {
+			float: right;
+			width: 762px;
+			background: #eee;
+		}
+
+		.showItem .itemRight {
+			line-height: 24px;
+		}
+
+		.imgBox {
+			margin-top: 30px;
+		}
+
+		.imgBox img {
+			width: 95px;
+			margin-right: 10px;
+		}
+
+		.reply {
+			position: relative;
+			padding: 15px;
+			margin-top: 20px;
+			border: 1px solid #ccc;
+			
+		}
+
+		.commentInfo {
+			margin-top: 25px;
+			text-align: right;
+		}
+
+		.commentInfo span {
+			margin-right: 10px;
+		}
+
+		.commentInfo .yes,
+		.commentInfo .no {
+			color: #666;
+			cursor: pointer;
+		}
+		
+		.addOrderBox {
+
+		}
+
+		.regulation {
+			/*height: 400px;*/
+			padding-top: 50px;
+			padding-bottom: 30px;
+			text-align: center;
+			background: url(regulation-bg.png) 0 0 no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.regulation .divider {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.regulationCont {
+			width: 1200px;
+			margin: 0 auto;
+			line-height: 30px;
+			color: #fff;
+			font-size: 16px;
+			text-align: left;
+			letter-spacing: 2px;
+			font-family: "黑体";
+		}
+
+		.regulationCont p {
+			margin-bottom: 60px;
+		}

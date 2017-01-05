@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的同舟-订单管理-上传购物凭证</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../common/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../common/css/h-t-f.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style>
+
+		.form-item {
+			margin-top: 20px;
+			font-size: 15px;
+			color: #666;
+		}
+
+		label {
+			float: left;
+			margin-right: 50px;
+			margin-left: 10px;
+		}
+
+		.form-item input {
+			width: 300px;
+			height: 23px;
+			padding: 5px;
+			line-height: 23px;
+			border: 1px solid #ccc;
+			letter-spacing: .5px;
+		}
+	
+		textarea {
+			float: left;
+			width:400px;
+			height:100px;
+			padding: 5px;
+			line-height: 24px;
+			border: 1px solid #ccc; 
+			outline: none;
+		}
+
+		#uploadPic {
+			position: relative;
+			float: left;
+			display: block;
+			width: 90px;
+			height: 32px;
+			padding: 5px;
+			direction: ltr;
+			line-height: 32px;
+			color: #fff;
+			font-size: 15px;
+			text-align: center;
+			letter-spacing: 4px;
+			background: #167ce1;
+		}
+		
+		#uploadPic input {
+			position: absolute;
+			height: 42px;
+			right: 0px;
+			top: 0px;
+			font-family: Arial;
+			margin: 0px;
+			padding: 0px;
+			cursor: pointer;
+			opacity: 0;
+		}
+
+		.form-item button{
+			width: 80px;
+			height: 40px;
+			line-height: 40px;
+			cursor: pointer;
+			font-size: 16px;
+			color: #fff;
+			letter-spacing: 4px;
+			border-radius: 10px;
+			outline: none;
+		}
+
+		.buttonWrap {
+			margin-top: 50px;
+			margin-left: 130px;
+		}
+
+		.buttonWrap button{
+			margin-right: 20px;
+		}
+
+		.buttonWrap button.submit {
+			background: #167ce1;
+		}
+
+		.buttonWrap button.cancel {
+			background: #ccc;
+		}
+
+		.form-item b {
+			color: rgb(255, 64, 129)
+		}
+	</style>
+</head>
+<body>
+	<!-- 中间内容开始 -->
+	<div class="content">
+		<div class="w clearfix">
+			<!-- 左侧sub开始 -->
+			<div id="sub">
+				<div class="list">
+					<h3>我的同舟</h3>
+					<ul>
+						<li>
+							<a href="01-会员中心.html">会员中心</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>账号管理</h3>
+					<ul>
+						<li>
+							<a href="02-修改资料.html">修改资料</a>
+						</li>
+						<li>
+							<a href="03-修改密码.html">修改密码</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>地址本</h3>
+					<ul>
+						<li>
+							<a href="04-添加发件人地址.html">【添加】发件人地址</a>
+						</li>
+						<li>
+							<a href="05-添加收件人地址.html">【添加】收件人地址</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>创建订单</h3>
+					<ul>
+						<li>
+							<a href="06-原箱转运.html">原箱转运</a>
+						</li>
+						<li>
+							<a href="07-货件合包.html">货件合包</a>
+						</li>
+						<li>
+							<a href="08-货件拆包.html">货件拆包</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>订单状态</h3>
+					<ul>
+						<li>
+							<a href="09-等待支付.html">等待支付</a>
+						</li>
+						<li>
+							<a href="10-等待处理.html">等待处理</a>
+						</li>
+						<li>
+							<a href="11-等待发货.html">等待发货</a>
+						</li>
+						<li>
+							<a href="12-发货完成.html">发货完成</a>
+						</li>
+						<li class="on">
+							<a href="javascript:;void(0)">上传购物凭证</a>
+						</li>
+						<li>
+							<a href="../10-物流查询/index.html">货物跟踪</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>财务管理</h3>
+					<ul>
+						<li>
+							<a href="14-在线充值.html">在线充值</a>
+						</li>
+						<li>
+							<a href="15-账单明细.html">账单明细</a>
+						</li>
+						<li>
+							<a href="16-积分明细.html">积分明细</a>
+						</li>
+						<li>
+							<a href="17-下级消费情况.html">下级消费情况</a>
+						</li>
+						<li>
+							<a href="18-冻结金额列表index.html">冻结金额列表</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>推广管理</h3>
+					<ul>
+						<li>
+							<a href="19-我的活跃度.html">我的活跃度</a>
+						</li>
+						<li>
+							<a href="20-推广代码.html">推广代码</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>服务报价</h3>
+					<ul>
+						<li>
+							<a href="21-价格查询.html">价格查询</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<h3>其他管理</h3>
+					<ul>
+						<li>
+							<a href="22-留言反馈.html">留言反馈</a>
+						</li>
+						<li>
+							<a href="23-消息中心.html">信息中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+
+
+				<!-- 网页位置 -->
+				<div class="content-position">
+					<span>您现在的位置：</span>
+					<a href="#">我的同舟</a>
+					<b>>></b>
+					<a href="#">订单状态</a>
+					<b>>></b>
+					<span class="content-position-last">晒单上传</span>
+				</div>
+				<!-- 网页标题 -->
+				<div class="content-name">
+					<h2 class="blue-line">晒单上传</h2>
+				</div>
+
+				<div class="cont">
+					<div class="cont-bd">
+						<div class="formBox">
+							<div class="form-item clearfix">
+								<label for="" style="margin-right: 60px;">晒单标题<b></b></label>
+								<input type="text" >
+							</div>
+							<div class="form-item clearfix">
+								<label for="">晒单内容<b>*</b></label>
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+							</div>
+							<div class="form-item clearfix">
+								<label for="">上传图片<b>*</b></label>
+								<a id="uploadPic" href="javascript:;void(0)">
+									<span>晒图片</span>
+									<input type="file" >
+								</a>
+							</div>
+							<div class="form-item clearfix">
+								<div class="buttonWrap">
+									<button class="submit">提交</button>
+									<button class="cancel">取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../common/libs/jquery-1.8.3.min.js"></script>
+<script src="../common/js/global.js"></script>
+<script src="../common/libs/jquery.validate.min.js"></script>
+<script src="../common/libs/messages_zh.min.js"></script>
+<script type="text/javascript">
+	$("")
+</script>
+</html>
